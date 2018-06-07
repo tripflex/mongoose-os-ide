@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Cesanta",
+      "authorEmail": "support@cesanta.com",
+      "authorUrl": "https://cesanta.com"
+    }
+  }
+}

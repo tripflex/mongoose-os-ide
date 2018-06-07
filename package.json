@@ -1,0 +1,133 @@
+{
+    "name": "mongoose-os-ide",
+    "displayName": "Mongoose OS IDE",
+    "description": "Development environment for Mongoose OS",
+    "homepage": "https://mongoose-os.com",
+    "version": "0.3.0",
+    "publisher": "mongoose-os",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "workspaceContains:mos.yml"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "mos.rpc",
+                "title": "Call RPC...",
+                "category": "Mongoose OS"
+            },
+            {
+                "command": "mos.flash",
+                "title": "Flash",
+                "category": "Mongoose OS"
+            },
+            {
+                "command": "mos.showDocs",
+                "title": "Documentation...",
+                "category": "Mongoose OS"
+            },
+            {
+                "command": "deviceFS.refresh",
+                "title": "Refresh",
+                "category": "Mongoose OS"
+            },
+            {
+                "command": "deviceFS.add",
+                "title": "Add file...",
+                "category": "Mongoose OS"
+            },
+            {
+                "command": "deviceFS.remove",
+                "title": "Remove file"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "mos.showDocs",
+                "key": "Ctrl+F1"
+            }
+        ],
+        "taskDefinitions": [
+            {
+                "type": "mos",
+                "required": []
+            }
+        ],
+        "problemMatchers": [
+            {
+                "name": "mosBuildMatcher",
+                "owner": "mos",
+                "fileLocation": "absolute",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error|fatal error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        ],
+        "views": {
+            "explorer": [
+                {
+                    "id": "deviceFS",
+                    "name": "Device Files"
+                }
+            ]
+        },
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "mos.showDocs",
+                    "when": ""
+                }
+            ],
+            "view/title": [
+                {
+                    "command": "deviceFS.refresh",
+                    "when": "view == deviceFS"
+                },
+                {
+                    "command": "deviceFS.add",
+                    "when": "view == deviceFS"
+                }
+            ],
+            "view/item/context": [
+                {
+                    "command": "deviceFS.refresh",
+                    "when": "view == deviceFS"
+                },
+                {
+                    "command": "deviceFS.remove",
+                    "when": "view == deviceFS && viewItem == deviceFile"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.43",
+        "tslint": "^5.8.0",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6"
+    },
+    "dependencies": {
+        "markdown-it": "^8.4.0",
+        "request": "^2.83.0",
+        "ws": "^3.3.3"
+    }
+}

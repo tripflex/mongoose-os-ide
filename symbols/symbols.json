@@ -1,0 +1,6149 @@
+[
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 20,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": " Copyright (c) 2004-2013 Sergey Lyubka \u003cvalenok@gmail.com\u003e\n Copyright (c) 2013 Cesanta Software Limited\n All rights reserved\n\n This library is dual-licensed: you can redistribute it and/or modify\n it under the terms of the GNU General Public License version 2 as\n published by the Free Software Foundation. For the terms of this\n license, see \u003chttp: *www.gnu.org/licenses/\u003e.\n\n You are free to use this library under the terms of the GNU General\n Public License, but WITHOUT ANY WARRANTY; without even the implied\n warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n See the GNU General Public License for more details.\n\n Alternatively, you can license this library under a commercial\n license, as set out in \u003chttp://cesanta.com/products.html\u003e."
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 32,
+    "name": "bool",
+    "type": "typedef",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 33,
+    "name": "__anon33",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 33,
+    "name": "false",
+    "type": "member",
+    "args": "",
+    "scope": "__anon33",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 39,
+    "name": "json_token_type",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "JSON token type"
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 40,
+    "name": "JSON_TYPE_INVALID",
+    "type": "member",
+    "args": "",
+    "scope": "json_token_type",
+    "doc": "memsetting to 0 should create INVALID value"
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 41,
+    "name": "JSON_TYPE_STRING",
+    "type": "member",
+    "args": "",
+    "scope": "json_token_type",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 42,
+    "name": "JSON_TYPE_NUMBER",
+    "type": "member",
+    "args": "",
+    "scope": "json_token_type",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 43,
+    "name": "JSON_TYPE_TRUE",
+    "type": "member",
+    "args": "",
+    "scope": "json_token_type",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 44,
+    "name": "JSON_TYPE_FALSE",
+    "type": "member",
+    "args": "",
+    "scope": "json_token_type",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 45,
+    "name": "JSON_TYPE_NULL",
+    "type": "member",
+    "args": "",
+    "scope": "json_token_type",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 46,
+    "name": "JSON_TYPE_OBJECT_START",
+    "type": "member",
+    "args": "",
+    "scope": "json_token_type",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 47,
+    "name": "JSON_TYPE_OBJECT_END",
+    "type": "member",
+    "args": "",
+    "scope": "json_token_type",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 48,
+    "name": "JSON_TYPE_ARRAY_START",
+    "type": "member",
+    "args": "",
+    "scope": "json_token_type",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 49,
+    "name": "JSON_TYPE_ARRAY_END",
+    "type": "member",
+    "args": "",
+    "scope": "json_token_type",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 58,
+    "name": "json_token",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Structure containing token type and value. Used in `json_walk()` and\n`json_scanf()` with the format specifier `%T`."
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 59,
+    "name": "ptr",
+    "type": "member",
+    "args": "",
+    "scope": "json_token",
+    "doc": "Points to the beginning of the value"
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 60,
+    "name": "len",
+    "type": "member",
+    "args": "",
+    "scope": "json_token",
+    "doc": "Value length"
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 61,
+    "name": "json_token_type",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "Type of the token, possible values are above"
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 61,
+    "name": "type",
+    "type": "member",
+    "args": "",
+    "scope": "json_token",
+    "doc": "Type of the token, possible values are above"
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 64,
+    "name": "JSON_INVALID_TOKEN",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 68,
+    "name": "JSON_STRING_INVALID",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "Error codes"
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 69,
+    "name": "JSON_STRING_INCOMPLETE",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 99,
+    "name": "json_walk_callback_t",
+    "type": "typedef",
+    "args": "(void *callback_data, const char *name,\n                                     size_t name_len, const char *path,\n                                     const struct json_token *token)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 107,
+    "name": "json_walk",
+    "type": "function",
+    "args": "(const char *json_string, int json_string_length,\n              json_walk_callback_t callback, void *callback_data)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 113,
+    "name": "json_out",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "JSON generation API.\nstruct json_out abstracts output, allowing alternative printing plugins."
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 114,
+    "name": "json_out",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 114,
+    "name": "",
+    "type": "member",
+    "args": "",
+    "scope": "json_out",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 114,
+    "name": "str",
+    "type": "member",
+    "args": "",
+    "scope": "json_out",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 114,
+    "name": "",
+    "type": "member",
+    "args": "",
+    "scope": "json_out",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 115,
+    "name": "__anon115",
+    "type": "union",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 116,
+    "name": "__anon116",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 117,
+    "name": "buf",
+    "type": "member",
+    "args": "",
+    "scope": "__anon116",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 118,
+    "name": "size",
+    "type": "member",
+    "args": "",
+    "scope": "__anon116",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 119,
+    "name": "len",
+    "type": "member",
+    "args": "",
+    "scope": "__anon116",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 120,
+    "name": "buf",
+    "type": "member",
+    "args": "",
+    "scope": "__anon115",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 121,
+    "name": "data",
+    "type": "member",
+    "args": "",
+    "scope": "__anon115",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 122,
+    "name": "fp",
+    "type": "member",
+    "args": "",
+    "scope": "__anon115",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 123,
+    "name": "u",
+    "type": "member",
+    "args": "",
+    "scope": "json_out",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 126,
+    "name": "json_printer_buf",
+    "type": "function",
+    "args": "(struct json_out *, const char *, size_t)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 127,
+    "name": "json_printer_file",
+    "type": "function",
+    "args": "(struct json_out *, const char *, size_t)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 129,
+    "name": "JSON_OUT_BUF",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 135,
+    "name": "JSON_OUT_FILE",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 142,
+    "name": "json_printf_callback_t",
+    "type": "typedef",
+    "args": "(struct json_out *, va_list *ap)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 159,
+    "name": "json_printf",
+    "type": "function",
+    "args": "(struct json_out *, const char *fmt, ...)",
+    "scope": "",
+    "doc": " Generate formatted output into a given sting buffer.\n This is a superset of printf() function, with extra format specifiers:\n  - `%B` print json boolean, `true` or `false`. Accepts an `int`.\n  - `%Q` print quoted escaped string or `null`. Accepts a `const char *`.\n  - `%.*Q` same as `%Q`, but with length. Accepts `int`, `const char *`\n  - `%V` print quoted base64-encoded string. Accepts a `const char *`, `int`.\n  - `%H` print quoted hex-encoded string. Accepts a `int`, `const char *`.\n  - `%M` invokes a json_printf_callback_t function. That callback function\n  can consume more parameters.\n\n Return number of bytes printed. If the return value is bigger then the\n supplied buffer, that is an indicator of overflow. In the overflow case,\n overflown bytes are not printed."
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 160,
+    "name": "json_vprintf",
+    "type": "function",
+    "args": "(struct json_out *, const char *fmt, va_list ap)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 166,
+    "name": "json_fprintf",
+    "type": "function",
+    "args": "(const char *file_name, const char *fmt, ...)",
+    "scope": "",
+    "doc": "Same as json_printf, but prints to a file.\nFile is created if does not exist. File is truncated if already exists."
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 167,
+    "name": "json_vfprintf",
+    "type": "function",
+    "args": "(const char *file_name, const char *fmt, va_list ap)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 174,
+    "name": "json_printf_array",
+    "type": "function",
+    "args": "(struct json_out *, va_list *ap)",
+    "scope": "",
+    "doc": "Helper %M callback that prints contiguous C arrays.\nConsumes void *array_ptr, size_t array_size, size_t elem_size, char *fmt\nReturn number of bytes printed."
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 203,
+    "name": "json_scanf",
+    "type": "function",
+    "args": "(const char *str, int str_len, const char *fmt, ...)",
+    "scope": "",
+    "doc": " Scan JSON string `str`, performing scanf-like conversions according to `fmt`.\n This is a `scanf()` - like function, with following differences:\n\n 1. Object keys in the format string may be not quoted, e.g. \"{key: %d}\"\n 2. Order of keys in an object is irrelevant.\n 3. Several extra format specifiers are supported:\n    - %B: consumes `int *` (or `char *`, if `sizeof(bool) == sizeof(char)`),\n       expects boolean `true` or `false`.\n    - %Q: consumes `char **`, expects quoted, JSON-encoded string. Scanned\n       string is malloc-ed, caller must free() the string.\n    - %V: consumes `char **`, `int *`. Expects base64-encoded string.\n       Result string is base64-decoded, malloced and NUL-terminated.\n       The length of result string is stored in `int *` placeholder.\n       Caller must free() the result.\n    - %H: consumes `int *`, `char **`.\n       Expects a hex-encoded string, e.g. \"fa014f\".\n       Result string is hex-decoded, malloced and NUL-terminated.\n       The length of the result string is stored in `int *` placeholder.\n       Caller must free() the result.\n    - %M: consumes custom scanning function pointer and\n       `void *user_data` parameter - see json_scanner_t definition.\n    - %T: consumes `struct json_token *`, fills it out with matched token.\n\n Return number of elements successfully scanned \u0026 converted.\n Negative number means scan error."
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 204,
+    "name": "json_vscanf",
+    "type": "function",
+    "args": "(const char *str, int str_len, const char *fmt, va_list ap)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 207,
+    "name": "json_scanner_t",
+    "type": "typedef",
+    "args": "(const char *str, int len, void *user_data)",
+    "scope": "",
+    "doc": "json_scanf's %M handler"
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 215,
+    "name": "json_scanf_array_elem",
+    "type": "function",
+    "args": "(const char *s, int len, const char *path, int index,\n                          struct json_token *token)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 224,
+    "name": "json_unescape",
+    "type": "function",
+    "args": "(const char *src, int slen, char *dst, int dlen)",
+    "scope": "",
+    "doc": "Unescape JSON-encoded string src,slen into dst, dlen.\nsrc and dst may overlap.\nIf destination buffer is too small (or zero-length), result string is not\nwritten but the length is counted nevertheless (similar to snprintf).\nReturn the length of unescaped string in bytes."
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 230,
+    "name": "json_escape",
+    "type": "function",
+    "args": "(struct json_out *out, const char *str, size_t str_len)",
+    "scope": "",
+    "doc": "Escape a string `str`, `str_len` into the printer `out`.\nReturn the number of bytes printed."
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 236,
+    "name": "json_fread",
+    "type": "function",
+    "args": "(const char *file_name)",
+    "scope": "",
+    "doc": "Read the whole file in memory.\nReturn malloc-ed file content, or NULL on error. The caller must free()."
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 252,
+    "name": "json_setf",
+    "type": "function",
+    "args": "(const char *s, int len, struct json_out *out,\n              const char *json_path, const char *json_fmt, ...)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 255,
+    "name": "json_vsetf",
+    "type": "function",
+    "args": "(const char *s, int len, struct json_out *out,\n               const char *json_path, const char *json_fmt, va_list ap)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 261,
+    "name": "json_prettify",
+    "type": "function",
+    "args": "(const char *s, int len, struct json_out *out)",
+    "scope": "",
+    "doc": "Pretty-print JSON string `s,len` into `out`.\nReturn number of processed bytes in `s`."
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 268,
+    "name": "json_prettify_file",
+    "type": "function",
+    "args": "(const char *file_name)",
+    "scope": "",
+    "doc": "Prettify JSON file `file_name`.\nReturn number of processed bytes, or negative number of error.\nOn error, file content is not modified."
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 287,
+    "name": "json_next_key",
+    "type": "function",
+    "args": "(const char *s, int len, void *handle, const char *path,\n                    struct json_token *key, struct json_token *val)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../frozen/frozen.h",
+    "line": 294,
+    "name": "json_next_elem",
+    "type": "function",
+    "args": "(const char *s, int len, void *handle, const char *path,\n                     int *idx, struct json_token *val)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos.h",
+    "line": 6,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Copyright (c) 2014-2017 Cesanta Software Limited\nAll rights reserved"
+  },
+  {
+    "file": "../../fw/include/mgos_app.h",
+    "line": 19,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": " This file contains definitions for the user-defined app entry point,\n `mgos_app_init()`.\n\n The `mgos_app_init()` function is like the `main()` function in the C\n program. This is a app's entry point.\n\n The mongoose-os core code does implement `mgos_app_init()`\n stub function as a weak symbol, so if user app does not define its own\n `mgos_app_init()`, a default stub will be used. That's what most of the\n JavaScript based apps do - they do not contain C code at all."
+  },
+  {
+    "file": "../../fw/include/mgos_app.h",
+    "line": 28,
+    "name": "mgos_app_init_result",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_app.h",
+    "line": 29,
+    "name": "MGOS_APP_INIT_SUCCESS",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_app_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_app.h",
+    "line": 30,
+    "name": "MGOS_APP_INIT_ERROR",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_app_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_app.h",
+    "line": 37,
+    "name": "mgos_app_init_result",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "User app init function.\nA weak stub is provided in `mgos_app_init.c`, which can be overridden."
+  },
+  {
+    "file": "../../fw/include/mgos_app.h",
+    "line": 37,
+    "name": "mgos_app_init",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "User app init function.\nA weak stub is provided in `mgos_app_init.c`, which can be overridden."
+  },
+  {
+    "file": "../../fw/include/mgos_app.h",
+    "line": 47,
+    "name": "mgos_app_preinit",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "An early init hook, for apps that want to take control early\nin the init process. How early? very, very early. If the platform\nuses RTOS, it is not running yet. Dynamic memory allocation is not\nsafe. Networking is not running. The only safe thing to do is to\ncommunicate to mg_app_init something via global variables or shut\ndown the processor and go (back) to sleep."
+  },
+  {
+    "file": "../../fw/include/mgos_bitbang.h",
+    "line": 14,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Bit banging is a technique to implement hardware protocols fully in\nsoftware, by managing microcontroller pin states - including timing,\nvoltage levels, etc.\nSee [wikipedia article](https://en.wikipedia.org/wiki/Bit_banging) for\na detailed information."
+  },
+  {
+    "file": "../../fw/include/mgos_bitbang.h",
+    "line": 24,
+    "name": "mgos_delay_unit",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_bitbang.h",
+    "line": 25,
+    "name": "MGOS_DELAY_MSEC",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_delay_unit",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_bitbang.h",
+    "line": 26,
+    "name": "MGOS_DELAY_USEC",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_delay_unit",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_bitbang.h",
+    "line": 27,
+    "name": "MGOS_DELAY_100NSEC",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_delay_unit",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_bitbang.h",
+    "line": 49,
+    "name": "mgos_bitbang_write_bits",
+    "type": "function",
+    "args": "(int gpio, enum mgos_delay_unit delay_unit, int t0h,\n                             int t0l, int t1h, int t1l, const uint8_t *data,\n                             size_t len)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_bitbang.h",
+    "line": 58,
+    "name": "mgos_bitbang_write_bits_js",
+    "type": "function",
+    "args": "(int gpio, enum mgos_delay_unit delay_unit,\n                                uint32_t t, const uint8_t *data, size_t len)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_bitbang.h",
+    "line": 60,
+    "name": "mgos_bitbang_n100_cal",
+    "type": "global",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 10,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Low-level interface to the configuration infrastructure."
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 44,
+    "name": "mgos_conf_check_access",
+    "type": "function",
+    "args": "(const struct mg_str key, const char *acl)",
+    "scope": "",
+    "doc": " Return `true` if a given ACL allows `key` modification.\n\n ACL is a comma-separated list of globs, each glob might be additionally\n prefixed with `+` (which is a no-op) or `-` (which means that matching keys\n are NOT allowed).\n\n For glob syntax details, see `mg_match_prefix()`.\n\n Example:\n\n ```c\n // Allow everything starting from \"foo.\", except \"foo.bar\":\n const char *acl = \"-foo.bar,+foo.*,-*\";\n mgos_conf_check_access(mg_mk_str(\"foo.bar\"), acl); // false\n mgos_conf_check_access(mg_mk_str(\"foo.qwe\"), acl); // true\n mgos_conf_check_access(mg_mk_str(\"foo.rty\"), acl); // true\n mgos_conf_check_access(mg_mk_str(\"hey\"), acl);     // false\n ```"
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 47,
+    "name": "mgos_conf_check_access_n",
+    "type": "function",
+    "args": "(const struct mg_str key, struct mg_str acl)",
+    "scope": "",
+    "doc": "Same as `mgos_conf_check_access()`, but `acl` is `struct mg_str`."
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 50,
+    "name": "mgos_conf_type",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "Possible types of a configuration value."
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 51,
+    "name": "CONF_TYPE_INT",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_conf_type",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 52,
+    "name": "CONF_TYPE_BOOL",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_conf_type",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 53,
+    "name": "CONF_TYPE_DOUBLE",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_conf_type",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 54,
+    "name": "CONF_TYPE_STRING",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_conf_type",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 55,
+    "name": "CONF_TYPE_OBJECT",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_conf_type",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 59,
+    "name": "mgos_conf_entry",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Configuration entry"
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 60,
+    "name": "mgos_conf_type",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 60,
+    "name": "type",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_conf_entry",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 61,
+    "name": "key",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_conf_entry",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 62,
+    "name": "__anon62",
+    "type": "union",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 63,
+    "name": "offset",
+    "type": "member",
+    "args": "",
+    "scope": "__anon62",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 64,
+    "name": "num_desc",
+    "type": "member",
+    "args": "",
+    "scope": "__anon62",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 65,
+    "name": "union",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_conf_entry",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 73,
+    "name": "mgos_conf_parse",
+    "type": "function",
+    "args": "(const struct mg_str json, const char *acl,\n                     const struct mgos_conf_entry *schema, void *cfg)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 79,
+    "name": "mgos_conf_emit_cb_t",
+    "type": "typedef",
+    "args": "(struct mbuf *data, void *param)",
+    "scope": "",
+    "doc": "Callback for `mgos_conf_emit_cb` (see below); `data` is the emitted data and\n`param` is user-defined param given to `mgos_conf_emit_cb`."
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 97,
+    "name": "mgos_conf_emit_cb",
+    "type": "function",
+    "args": "(const void *cfg, const void *base,\n                       const struct mgos_conf_entry *schema, bool pretty,\n                       struct mbuf *out, mgos_conf_emit_cb_t cb,\n                       void *cb_param)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 106,
+    "name": "mgos_conf_emit_f",
+    "type": "function",
+    "args": "(const void *cfg, const void *base,\n                      const struct mgos_conf_entry *schema, bool pretty,\n                      const char *fname)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 111,
+    "name": "mgos_conf_free",
+    "type": "function",
+    "args": "(const struct mgos_conf_entry *schema, void *cfg)",
+    "scope": "",
+    "doc": "Frees any resources allocated in `cfg`."
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 118,
+    "name": "mgos_conf_entry",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Finds a config schema entry by the \"outer\" entry (which has to describe an\nobject) and a path like \"foo.bar.baz\". If matching entry is not found,\nreturns `NULL`."
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 119,
+    "name": "mgos_conf_find_schema_entry",
+    "type": "function",
+    "args": "(\n    const char *path, const struct mgos_conf_entry *obj)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 125,
+    "name": "mgos_conf_entry",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Like `mgos_conf_find_schema_entry()`, but takes the path as a `strct\nmg_str`."
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 126,
+    "name": "mgos_conf_find_schema_entry_s",
+    "type": "function",
+    "args": "(\n    const struct mg_str path, const struct mgos_conf_entry *obj)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 129,
+    "name": "mgos_conf_set_str",
+    "type": "function",
+    "args": "(char **vp, const char *v)",
+    "scope": "",
+    "doc": "Set string configuration entry. Frees current entry."
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 132,
+    "name": "mgos_conf_str_empty",
+    "type": "function",
+    "args": "(const char *s)",
+    "scope": "",
+    "doc": "Returns true if the string is NULL or empty."
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 137,
+    "name": "mgos_conf_type",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "Returns a type of the value (this function is primarily for FFI)"
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 137,
+    "name": "mgos_conf_value_type",
+    "type": "function",
+    "args": "(struct mgos_conf_entry *e)",
+    "scope": "",
+    "doc": "Returns a type of the value (this function is primarily for FFI)"
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 144,
+    "name": "mgos_conf_value_string",
+    "type": "function",
+    "args": "(const void *cfg,\n                                   const struct mgos_conf_entry *e)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 151,
+    "name": "mgos_conf_value_string_nonnull",
+    "type": "function",
+    "args": "(const void *cfg,\n                                           const struct mgos_conf_entry *e)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 155,
+    "name": "mgos_conf_value_int",
+    "type": "function",
+    "args": "(const void *cfg, const struct mgos_conf_entry *e)",
+    "scope": "",
+    "doc": "Returns an int or bool value from the config entry"
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 160,
+    "name": "mgos_conf_value_double",
+    "type": "function",
+    "args": "(const void *cfg, const struct mgos_conf_entry *e)",
+    "scope": "",
+    "doc": "Returns a double value from the config entry"
+  },
+  {
+    "file": "../../fw/include/mgos_config_util.h",
+    "line": 165,
+    "name": "mgos_expand_placeholders",
+    "type": "function",
+    "args": "(const struct mg_str src, struct mg_str *str)",
+    "scope": "",
+    "doc": "Expands ? placeholders in str with characters from src, right to left."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 6,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Copyright (c) 2014-2017 Cesanta Software Limited\nAll rights reserved"
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 19,
+    "name": "MGOS_DEBUG_UART_BAUD_RATE",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 22,
+    "name": "MGOS_DEBUG_TMP_BUF_SIZE",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 27,
+    "name": "mgos_debug_hook_arg",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Arguments for the `MGOS_EVENT_LOG` event, see `mgos_event_add_handler()`."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 28,
+    "name": "fd",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_debug_hook_arg",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 29,
+    "name": "data",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_debug_hook_arg",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 30,
+    "name": "len",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_debug_hook_arg",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 36,
+    "name": "buf",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_debug_hook_arg",
+    "doc": "Buffer which hooks can use for their own needs; size of the buffer is\nMGOS_DEBUG_TMP_BUF_SIZE."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 42,
+    "name": "mgos_debug_write",
+    "type": "function",
+    "args": "(int fd, const void *buf, size_t len)",
+    "scope": "",
+    "doc": "Write debug info `buf`, `len` to the given file descriptor `fd`."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 47,
+    "name": "mgos_debug_flush",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Flush debug UARTs, both stdout and stderr."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 50,
+    "name": "mgos_init_result",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "Set UART for stdout. Negative value disables stdout."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 50,
+    "name": "mgos_set_stdout_uart",
+    "type": "function",
+    "args": "(int uart_no)",
+    "scope": "",
+    "doc": "Set UART for stdout. Negative value disables stdout."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 53,
+    "name": "mgos_init_result",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "Set UART for stderr. Negative value disables stderr."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 53,
+    "name": "mgos_set_stderr_uart",
+    "type": "function",
+    "args": "(int uart_no)",
+    "scope": "",
+    "doc": "Set UART for stderr. Negative value disables stderr."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 56,
+    "name": "mgos_get_stdout_uart",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Get stdout UART number; -1 indicates that stdout is disabled."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 58,
+    "name": "mgos_get_stderr_uart",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Get stderr UART number; -1 indicates that stderr is disabled."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 65,
+    "name": "mgos_debug_suspend_uart",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Suspend UART output (both stdout and stderr); see\n`mgos_debug_resume_uart()`. Nested suspension is supported: UART needs to be\nresumed as many times as it was suspended."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 70,
+    "name": "mgos_debug_resume_uart",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Resume previously suspended UART output, see `mgos_debug_suspend_uart()`."
+  },
+  {
+    "file": "../../fw/include/mgos_debug.h",
+    "line": 75,
+    "name": "mgos_debug_uart_is_suspended",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Returns whether UART output is suspended at the moment."
+  },
+  {
+    "file": "../../fw/include/mgos_dlsym.h",
+    "line": 6,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Copyright (c) 2016 Cesanta Software Limited\nAll rights reserved"
+  },
+  {
+    "file": "../../fw/include/mgos_dlsym.h",
+    "line": 11,
+    "name": "mgos_ffi_export",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_dlsym.h",
+    "line": 12,
+    "name": "name",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_ffi_export",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_dlsym.h",
+    "line": 13,
+    "name": "addr",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_ffi_export",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_dlsym.h",
+    "line": 20,
+    "name": "mgos_dlsym",
+    "type": "function",
+    "args": "(void *handle, const char *name)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 13,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": " Event API.\n\n Mongoose OS provides a way to get a notification when certain event\n happens. Each event has an associated event data passed as `void *`."
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 29,
+    "name": "MGOS_EVENT_BASE",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "Macro to generate unique base event number.\nA library can use the last byte (LSB) to create up to 256 unique\nevents (see enum below on how Mongoose OS core defines its events).\nA library should call mgos_event_register_base() in order to claim\nit and prevent event number conflicts."
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 35,
+    "name": "MGOS_EVENT_SYS",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "These events are registered by the MGOS core.\nOther events could be registered by the external libraries."
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 40,
+    "name": "mgos_event_sys",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "System mos events"
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 47,
+    "name": "MGOS_EVENT_INIT_DONE",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_event_sys",
+    "doc": " Fired when all core modules and libs are initialized (Right after printing\n `Init done` to the console).\n\n ev_data: NULL"
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 55,
+    "name": "MGOS_EVENT_LOG",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_event_sys",
+    "doc": " Fired when anything is printed to the debug console, see `struct\n mgos_debug_hook_arg`\n\n ev_data: struct mgos_debug_hook_arg"
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 63,
+    "name": "MGOS_EVENT_REBOOT",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_event_sys",
+    "doc": " Fired right before restarting the system (but also before unmounting\n filesystems, disconnecting from the wifi, etc)\n\n ev_data: NULL"
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 70,
+    "name": "MGOS_EVENT_OTA_STATUS",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_event_sys",
+    "doc": " Fired on OTA status changes.\n\n ev_data: struct mgos_ota_status"
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 78,
+    "name": "MGOS_EVENT_OTA_REQUEST",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_event_sys",
+    "doc": " Triggered when OTA needs to start, and one of the implementations handles\n it and performs the OTA.\n\n ev_data: struct ota_request_param"
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 101,
+    "name": "MGOS_EVENT_TIME_CHANGED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_event_sys",
+    "doc": " Fired when time is changed with `mgos_settimeofday()`.\n\n ev_data: `struct mgos_time_changed_arg`.\n\n Example:\n ```c\n static void my_time_change_cb(int ev, void *evd, void *arg) {\n   struct mgos_time_changed_arg *ev_data = (struct mgos_time_changed_arg *)\nevd;\n   LOG(LL_INFO, (\"Time has changed by %d\", ev_data-\u003edelta));\n\n   (void) ev;\n   (void) arg;\n }\n\n // ...\n\n mgos_event_add_handler(MGOS_EVENT_TIME_CHANGED, my_time_change_cb, NULL);\n ```"
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 105,
+    "name": "ota_request_param",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Parameter for the MGOS_EVENT_OTA_REQUEST event"
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 106,
+    "name": "location",
+    "type": "member",
+    "args": "",
+    "scope": "ota_request_param",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 107,
+    "name": "updater_context",
+    "type": "member",
+    "args": "",
+    "scope": "ota_request_param",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 129,
+    "name": "mgos_event_register_base",
+    "type": "function",
+    "args": "(int base_event_number, const char *name)",
+    "scope": "",
+    "doc": " Register a base event number in order to prevent event number conflicts.\n Use `MGOS_EVENT_BASE()` macro to get `base_event_number`; `name` is an\n arbitrary name of the module who registers the base number.\n\n Example:\n ```c\n #define MY_EVENT_BASE MGOS_EVENT_BASE('F', 'O', 'O')\n\n enum my_event {\n   MY_EVENT_AAA = MY_EVENT_BASE,\n   MY_EVENT_BBB,\n   MY_EVENT_CCC,\n };\n\n // And somewhere else:\n mgos_event_register_base(MY_EVENT_BASE, \"my module foo\");\n ```"
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 133,
+    "name": "mgos_event_trigger",
+    "type": "function",
+    "args": "(int ev, void *ev_data)",
+    "scope": "",
+    "doc": "Trigger an event `ev` with the event data `ev_data`. Return number of event\n  handlers invoked."
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 136,
+    "name": "mgos_event_handler_t",
+    "type": "typedef",
+    "args": "(int ev, void *ev_data, void *userdata)",
+    "scope": "",
+    "doc": "Event handler signature."
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 154,
+    "name": "mgos_event_add_handler",
+    "type": "function",
+    "args": "(int ev, mgos_event_handler_t cb, void *userdata)",
+    "scope": "",
+    "doc": " Add an event handler. Return true on success, false on error (e.g. OOM).\n\n Example:\n ```c\n static void system_restart_cb(int ev, void *ev_data, void *userdata) {\n   LOG(LL_INFO, (\"Going to reboot!\"));\n   (void) ev;\n   (void) ev_data;\n   (void) userdata;\n }\n\n // And somewhere else:\n mgos_event_add_handler(MGOS_EVENT_REBOOT, system_restart_cb, NULL);\n ```"
+  },
+  {
+    "file": "../../fw/include/mgos_event.h",
+    "line": 175,
+    "name": "mgos_event_add_group_handler",
+    "type": "function",
+    "args": "(int evgrp, mgos_event_handler_t cb,\n                                  void *userdata)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_features.h",
+    "line": 6,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Copyright (c) 2014-2017 Cesanta Software Limited\nAll rights reserved"
+  },
+  {
+    "file": "../../fw/include/mgos_features.h",
+    "line": 10,
+    "name": "MGOS_ENABLE_BITBANG",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_features.h",
+    "line": 14,
+    "name": "MGOS_ENABLE_DEBUG_UDP",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_features.h",
+    "line": 18,
+    "name": "MGOS_ENABLE_SYS_SERVICE",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_features.h",
+    "line": 22,
+    "name": "MGOS_ENABLE_MDNS",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_features.h",
+    "line": 26,
+    "name": "MGOS_ENABLE_UPDATER",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_features.h",
+    "line": 30,
+    "name": "MGOS_PROMPT_DISABLE_ECHO",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 12,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "GPIO API - see [wikipedia\narticle](https://en.wikipedia.org/wiki/General-purpose_input/output)\nfor the background information."
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 21,
+    "name": "mgos_gpio_mode",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 22,
+    "name": "MGOS_GPIO_MODE_INPUT",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_gpio_mode",
+    "doc": "input mode"
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 26,
+    "name": "mgos_gpio_pull_type",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 27,
+    "name": "MGOS_GPIO_PULL_NONE",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_gpio_pull_type",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 28,
+    "name": "MGOS_GPIO_PULL_UP",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_gpio_pull_type",
+    "doc": "pin is pilled to the high voltage"
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 32,
+    "name": "mgos_gpio_int_mode",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 33,
+    "name": "MGOS_GPIO_INT_NONE",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_gpio_int_mode",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 34,
+    "name": "MGOS_GPIO_INT_EDGE_POS",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_gpio_int_mode",
+    "doc": "positive edge"
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 35,
+    "name": "MGOS_GPIO_INT_EDGE_NEG",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_gpio_int_mode",
+    "doc": "negative edge"
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 36,
+    "name": "MGOS_GPIO_INT_EDGE_ANY",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_gpio_int_mode",
+    "doc": "any edge - positive or negative"
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 37,
+    "name": "MGOS_GPIO_INT_LEVEL_HI",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_gpio_int_mode",
+    "doc": "high voltage level"
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 42,
+    "name": "mgos_gpio_int_handler_f",
+    "type": "typedef",
+    "args": "(int pin, void *arg)",
+    "scope": "",
+    "doc": "GPIO interrupt handler signature."
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 45,
+    "name": "mgos_gpio_set_mode",
+    "type": "function",
+    "args": "(int pin, enum mgos_gpio_mode mode)",
+    "scope": "",
+    "doc": "Set mode - input or output."
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 48,
+    "name": "mgos_gpio_set_pull",
+    "type": "function",
+    "args": "(int pin, enum mgos_gpio_pull_type pull)",
+    "scope": "",
+    "doc": "Set pull-up or pull-down type."
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 51,
+    "name": "mgos_gpio_read",
+    "type": "function",
+    "args": "(int pin)",
+    "scope": "",
+    "doc": "Read pin input level."
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 54,
+    "name": "mgos_gpio_write",
+    "type": "function",
+    "args": "(int pin, bool level)",
+    "scope": "",
+    "doc": "Set pin's output level."
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 57,
+    "name": "mgos_gpio_toggle",
+    "type": "function",
+    "args": "(int pin)",
+    "scope": "",
+    "doc": "Flip output pin value. Returns value that was written."
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 60,
+    "name": "mgos_gpio_read_out",
+    "type": "function",
+    "args": "(int pin)",
+    "scope": "",
+    "doc": "Read the value of the output register."
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 74,
+    "name": "mgos_gpio_set_int_handler",
+    "type": "function",
+    "args": "(int pin, enum mgos_gpio_int_mode mode,\n                               mgos_gpio_int_handler_f cb, void *arg)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 82,
+    "name": "mgos_gpio_set_int_handler_isr",
+    "type": "function",
+    "args": "(int pin, enum mgos_gpio_int_mode mode,\n                                   mgos_gpio_int_handler_f cb, void *arg)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 85,
+    "name": "mgos_gpio_enable_int",
+    "type": "function",
+    "args": "(int pin)",
+    "scope": "",
+    "doc": "Enable interrupt on the specified pin."
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 88,
+    "name": "mgos_gpio_disable_int",
+    "type": "function",
+    "args": "(int pin)",
+    "scope": "",
+    "doc": "Disables interrupt (without removing the handler)."
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 96,
+    "name": "mgos_gpio_remove_int_handler",
+    "type": "function",
+    "args": "(int pin, mgos_gpio_int_handler_f *old_cb,\n                                  void **old_arg)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_gpio.h",
+    "line": 119,
+    "name": "mgos_gpio_set_button_handler",
+    "type": "function",
+    "args": "(int pin, enum mgos_gpio_pull_type pull_type,\n                                  enum mgos_gpio_int_mode int_mode,\n                                  int debounce_ms, mgos_gpio_int_handler_f cb,\n                                  void *arg)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 6,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Copyright (c) 2014-2016 Cesanta Software Limited\nAll rights reserved"
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 13,
+    "name": "mgos_init_result",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 14,
+    "name": "MGOS_INIT_OK",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 15,
+    "name": "MGOS_INIT_OUT_OF_MEMORY",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 16,
+    "name": "MGOS_INIT_APP_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 17,
+    "name": "MGOS_INIT_APP_JS_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 18,
+    "name": "MGOS_INIT_SYS_INIT_JS_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 19,
+    "name": "MGOS_INIT_FS_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 20,
+    "name": "MGOS_INIT_CONFIG_LOAD_DEFAULTS_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 21,
+    "name": "MGOS_INIT_CONFIG_WIFI_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 22,
+    "name": "MGOS_INIT_CONFIG_INVALID_STDOUT_UART",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 23,
+    "name": "MGOS_INIT_CONFIG_INVALID_STDERR_UART",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 24,
+    "name": "MGOS_INIT_CONFIG_WEB_SERVER_LISTEN_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 25,
+    "name": "MGOS_INIT_MG_RPC_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 26,
+    "name": "MGOS_INIT_UART_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 27,
+    "name": "MGOS_INIT_MDNS_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 28,
+    "name": "MGOS_INIT_MQTT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 29,
+    "name": "MGOS_INIT_I2C_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 30,
+    "name": "MGOS_INIT_ATCA_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 31,
+    "name": "MGOS_INIT_APPLY_UPDATE_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 32,
+    "name": "MGOS_INIT_CONSOLE_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 33,
+    "name": "MGOS_INIT_GPIO_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 34,
+    "name": "MGOS_INIT_DEBUG_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 35,
+    "name": "MGOS_INIT_MQTT_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 36,
+    "name": "MGOS_INIT_AWS_SHADOW_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 37,
+    "name": "MGOS_INIT_SNTP_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 38,
+    "name": "MGOS_INIT_TIMERS_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 39,
+    "name": "MGOS_INIT_SPI_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 40,
+    "name": "MGOS_INIT_GCP_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 41,
+    "name": "MGOS_INIT_GCP_INIT_FAILED_INVALID_KEY",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 42,
+    "name": "MGOS_INIT_DEPS_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 43,
+    "name": "MGOS_INIT_MOUNT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_init.h",
+    "line": 44,
+    "name": "MGOS_INIT_NET_INIT_FAILED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_init_result",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_mdns.h",
+    "line": 13,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": " Multicast DNS API.\n\n See https://en.wikipedia.org/wiki/Multicast_DNS for for information\n about the multicast DNS."
+  },
+  {
+    "file": "../../fw/include/mgos_mdns.h",
+    "line": 50,
+    "name": "mgos_mdns_add_handler",
+    "type": "function",
+    "args": "(mg_event_handler_t handler, void *ud)",
+    "scope": "",
+    "doc": " Register a mDNS event handler `handler` with the arbitrary userdata `ud`.\n\n Example:\n\n ```c\n static void handler(struct mg_connection *nc, int ev, void *ev_data,\n                     void *user_data) {\n   if (ev == MG_DNS_MESSAGE) {\n     struct mg_dns_message *msg = (struct mg_dns_message *) ev_data;\n     char *peer = inet_ntoa(nc-\u003esa.sin.sin_addr);\n     LOG(LL_DEBUG, (\"---- DNS packet from %s (%d questions, %d answers)\",\npeer,\n           msg-\u003enum_questions, msg-\u003enum_answers));\n   }\n\n   (void) user_data;\n }\n\n ....\n\n // Somewhere else:\n mgos_mdns_add_handler(handler, NULL)\n ```"
+  },
+  {
+    "file": "../../fw/include/mgos_mdns.h",
+    "line": 56,
+    "name": "mgos_mdns_remove_handler",
+    "type": "function",
+    "args": "(mg_event_handler_t handler, void *ud)",
+    "scope": "",
+    "doc": "Unregister a previously registered event handler with the given userdata\n`ud`."
+  },
+  {
+    "file": "../../fw/include/mgos_mdns.h",
+    "line": 59,
+    "name": "mg_connection",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Return global mDNS connection."
+  },
+  {
+    "file": "../../fw/include/mgos_mdns.h",
+    "line": 59,
+    "name": "mgos_mdns_get_listener",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Return global mDNS connection."
+  },
+  {
+    "file": "../../fw/include/mgos_mongoose.h",
+    "line": 13,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": " This file contains wrappers around low-level Mongoose Library calls.\n\n See https://mongoose-os.com/docs/book/intro.html#main-event-loop\n for the detailed explanation."
+  },
+  {
+    "file": "../../fw/include/mgos_mongoose.h",
+    "line": 21,
+    "name": "MGOS_RECV_MBUF_LIMIT",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_mongoose.h",
+    "line": 29,
+    "name": "mg_mgr",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Return global event manager"
+  },
+  {
+    "file": "../../fw/include/mgos_mongoose.h",
+    "line": 29,
+    "name": "mgos_get_mgr",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Return global event manager"
+  },
+  {
+    "file": "../../fw/include/mgos_mongoose.h",
+    "line": 38,
+    "name": "mongoose_poll",
+    "type": "function",
+    "args": "(int ms)",
+    "scope": "",
+    "doc": "If there are active connections, calls `mg_mgr_poll` on global event\nmanager. Also calls all registered on-poll callbacks (see\n`mgos_add_poll_cb()` and friends). Also feeds watchdog if that feature is\nenabled (see `mgos_wdt_set_feed_on_poll()`). Also reports min free heap size\nif that feature is enabled (see `mgos_set_enable_min_heap_free_reporting()`)"
+  },
+  {
+    "file": "../../fw/include/mgos_mongoose.h",
+    "line": 44,
+    "name": "mgos_poll_cb_t",
+    "type": "typedef",
+    "args": "(void *cb_arg)",
+    "scope": "",
+    "doc": "On-poll callback; `cb_arg` is an arbitrary pointer given to\n`mgos_add_poll_cb()`"
+  },
+  {
+    "file": "../../fw/include/mgos_mongoose.h",
+    "line": 49,
+    "name": "mgos_add_poll_cb",
+    "type": "function",
+    "args": "(mgos_poll_cb_t cb, void *cb_arg)",
+    "scope": "",
+    "doc": "Add an on-poll callback with an arbitrary argument, see `mongoose_poll()`."
+  },
+  {
+    "file": "../../fw/include/mgos_mongoose.h",
+    "line": 54,
+    "name": "mgos_remove_poll_cb",
+    "type": "function",
+    "args": "(mgos_poll_cb_t cb, void *cb_arg)",
+    "scope": "",
+    "doc": "Remove an on-poll callback, see `mongoose_poll()`."
+  },
+  {
+    "file": "../../fw/include/mgos_mongoose.h",
+    "line": 59,
+    "name": "mgos_wdt_set_feed_on_poll",
+    "type": "function",
+    "args": "(bool enable)",
+    "scope": "",
+    "doc": "Set whether wdt should be fed on each call to `mongoose_poll()`."
+  },
+  {
+    "file": "../../fw/include/mgos_mongoose.h",
+    "line": 65,
+    "name": "mgos_set_enable_min_heap_free_reporting",
+    "type": "function",
+    "args": "(bool enable)",
+    "scope": "",
+    "doc": "Set whether min free heap size should be reported on each call to\n`mongoose_poll()`."
+  },
+  {
+    "file": "../../fw/include/mgos_mongoose.h",
+    "line": 71,
+    "name": "mgos_get_nameserver",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Returns nameserver address. The caller should `free()` it. Returns NULL\nin case of no DNS."
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 14,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": " Low-level network configuration API.\n\n Contains definitions of the configuration state. Allows to set up an\n event handler that tracks state changes: when the network connectivity\n is lost, established, etc."
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 47,
+    "name": "MGOS_EVENT_GRP_NET",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": " Event group which should be given to `mgos_event_add_group_handler()`\n in order to subscribe to network events.\n\n Example:\n ```c\n static void my_net_ev_handler(int ev, void *evd, void *arg) {\n   if (ev == MGOS_NET_EV_IP_ACQUIRED) {\n     LOG(LL_INFO, (\"Just got IP!\"));\n     // Fetch something very useful from somewhere\n   }\n   (void) evd;\n   (void) arg;\n }\n\n // Somewhere else:\n mgos_event_add_group_handler(MGOS_EVENT_GRP_NET, my_net_ev_handler, NULL);\n ```"
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 54,
+    "name": "mgos_net_event",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "Event types which are delivered to the callback registered with\n`mgos_event_add_handler()` or `mgos_event_add_group_handler()`, see\nexample in the documentation for `MGOS_EVENT_GRP_NET`."
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 55,
+    "name": "MGOS_NET_EV_DISCONNECTED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_event",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 56,
+    "name": "MGOS_NET_EV_CONNECTING",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_event",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 57,
+    "name": "MGOS_NET_EV_CONNECTED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_event",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 58,
+    "name": "MGOS_NET_EV_IP_ACQUIRED",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_event",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 64,
+    "name": "mgos_net_if_type",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "Interface type"
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 65,
+    "name": "MGOS_NET_IF_TYPE_WIFI",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_if_type",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 66,
+    "name": "MGOS_NET_IF_TYPE_ETHERNET",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_if_type",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 67,
+    "name": "MGOS_NET_IF_TYPE_PPP",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_if_type",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 69,
+    "name": "MGOS_NET_IF_MAX",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_if_type",
+    "doc": "This is a sentinel in case all networking interface types are disabled."
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 72,
+    "name": "mgos_net_ip_info",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 73,
+    "name": "ip",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_ip_info",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 73,
+    "name": "sockaddr_in",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 74,
+    "name": "sockaddr_in",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 74,
+    "name": "netmask",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_ip_info",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 75,
+    "name": "sockaddr_in",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 75,
+    "name": "gw",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_ip_info",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 78,
+    "name": "mgos_net_event_data",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 79,
+    "name": "mgos_net_if_type",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 79,
+    "name": "if_type",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_event_data",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 80,
+    "name": "if_instance",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_event_data",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 81,
+    "name": "mgos_net_ip_info",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 81,
+    "name": "ip_info",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_net_event_data",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 90,
+    "name": "mgos_net_get_ip_info",
+    "type": "function",
+    "args": "(enum mgos_net_if_type if_type, int if_instance,\n                          struct mgos_net_ip_info *ip_info)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_net.h",
+    "line": 96,
+    "name": "mgos_net_ip_to_str",
+    "type": "function",
+    "args": "(const struct sockaddr_in *sin, char *out)",
+    "scope": "",
+    "doc": "Converts address to dotted-quad NUL-terminated string.\n`out` must be at least 16 bytes long."
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 6,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Copyright (c) 2014-2016 Cesanta Software Limited\nAll rights reserved"
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 21,
+    "name": "CONF_USER_FILE",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 23,
+    "name": "mgos_config_level",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 24,
+    "name": "MGOS_CONFIG_LEVEL_DEFAULTS",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_config_level",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 25,
+    "name": "MGOS_CONFIG_LEVEL_VENDOR_1",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_config_level",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 26,
+    "name": "MGOS_CONFIG_LEVEL_VENDOR_2",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_config_level",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 27,
+    "name": "MGOS_CONFIG_LEVEL_VENDOR_3",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_config_level",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 28,
+    "name": "MGOS_CONFIG_LEVEL_VENDOR_4",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_config_level",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 29,
+    "name": "MGOS_CONFIG_LEVEL_VENDOR_5",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_config_level",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 30,
+    "name": "MGOS_CONFIG_LEVEL_VENDOR_6",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_config_level",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 31,
+    "name": "MGOS_CONFIG_LEVEL_VENDOR_7",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_config_level",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 32,
+    "name": "MGOS_CONFIG_LEVEL_VENDOR_8",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_config_level",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 33,
+    "name": "MGOS_CONFIG_LEVEL_USER",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_config_level",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 36,
+    "name": "mgos_sys_config_is_initialized",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 45,
+    "name": "save_cfg",
+    "type": "function",
+    "args": "(const struct mgos_config *cfg, char **msg)",
+    "scope": "",
+    "doc": "Save config. Performs diff against defaults and only saves diffs.\nReboot is required to reload the config.\nIf return value is false, a message may be provided in *msg.\nIf non-NULL, it must be free()d.\nIt is safe to pass a NULL `msg`"
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 50,
+    "name": "load_config_defaults",
+    "type": "function",
+    "args": "(struct mgos_config *cfg)",
+    "scope": "",
+    "doc": "Reset all config values to defaults."
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 57,
+    "name": "mgos_config_reset",
+    "type": "function",
+    "args": "(int level)",
+    "scope": "",
+    "doc": "Reset config down to and including |level|.\n0 - defaults, 1-8 - vendor levels, 9 - user.\nmgos_config_reset(MGOS_CONFIG_LEVEL_USER) will wipe user settings."
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 67,
+    "name": "mgos_config_validator_fn",
+    "type": "typedef",
+    "args": "(const struct mgos_config *cfg,\n                                         char **msg)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 68,
+    "name": "mgos_register_config_validator",
+    "type": "function",
+    "args": "(mgos_config_validator_fn fn)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 70,
+    "name": "device_get_mac_address",
+    "type": "function",
+    "args": "(uint8_t mac[6])",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 73,
+    "name": "mgos_expand_mac_address_placeholders",
+    "type": "function",
+    "args": "(char *str)",
+    "scope": "",
+    "doc": "Expands question marks in \"str\" with digits from the MAC address."
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 76,
+    "name": "mgos_config_apply",
+    "type": "function",
+    "args": "(const char *sys_config_subset_json, bool save)",
+    "scope": "",
+    "doc": "Apply a subset of system configuration. Return true on success."
+  },
+  {
+    "file": "../../fw/include/mgos_sys_config.h",
+    "line": 79,
+    "name": "mgos_config_apply_s",
+    "type": "function",
+    "args": "(const struct mg_str, bool save)",
+    "scope": "",
+    "doc": "Same as mgos_config_apply but uses mg_str"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 13,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": " See on GitHub:\n [mgos_hal.h](https://github.com/cesanta/mongoose-os/blob/master/mgos_hal.h)\n\n These interfaces need to be implemented for each hardware platform."
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 25,
+    "name": "mgos_get_heap_size",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Get system memory size."
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 28,
+    "name": "mgos_get_free_heap_size",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Get system free memory."
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 31,
+    "name": "mgos_get_min_free_heap_size",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Get minimal watermark of the system free memory."
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 34,
+    "name": "mgos_get_fs_memory_usage",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Get filesystem memory usage"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 37,
+    "name": "mgos_get_fs_size",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Get filesystem size."
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 40,
+    "name": "mgos_get_free_fs_size",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Get filesystem free space."
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 43,
+    "name": "mgos_fs_gc",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Garbage-collect filesystem"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 46,
+    "name": "mgos_wdt_feed",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Feed watchdog"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 49,
+    "name": "mgos_wdt_set_timeout",
+    "type": "function",
+    "args": "(int secs)",
+    "scope": "",
+    "doc": "Set watchdog timeout"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 52,
+    "name": "mgos_wdt_enable",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Enable watchdog"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 55,
+    "name": "mgos_wdt_disable",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Disable watchdog"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 58,
+    "name": "mgos_system_restart",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Restart system"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 61,
+    "name": "mgos_msleep",
+    "type": "function",
+    "args": "(uint32_t msecs)",
+    "scope": "",
+    "doc": "Delay given number of milliseconds"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 64,
+    "name": "mgos_usleep",
+    "type": "function",
+    "args": "(uint32_t usecs)",
+    "scope": "",
+    "doc": "Delay given number of nanoseconds"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 66,
+    "name": "void",
+    "type": "function",
+    "args": "(*mgos_nsleep100)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 69,
+    "name": "mgos_ints_disable",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Disable interrupts"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 72,
+    "name": "mgos_ints_enable",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Enable interrupts"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 75,
+    "name": "mgos_cb_t",
+    "type": "typedef",
+    "args": "(void *arg)",
+    "scope": "",
+    "doc": "Callback for `mgos_invoke_cb()`"
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 81,
+    "name": "mgos_invoke_cb",
+    "type": "function",
+    "args": "(mgos_cb_t cb, void *arg, bool from_isr)",
+    "scope": "",
+    "doc": "Invoke a callback in the main MGOS event loop.\nReturns true if the callback has been scheduled for execution."
+  },
+  {
+    "file": "../../fw/include/mgos_system.h",
+    "line": 84,
+    "name": "mgos_get_cpu_freq",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Get the CPU frequency in Hz"
+  },
+  {
+    "file": "../../fw/include/mgos_time.h",
+    "line": 6,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Copyright (c) 2014-2017 Cesanta Software Limited\nAll rights reserved"
+  },
+  {
+    "file": "../../fw/include/mgos_time.h",
+    "line": 19,
+    "name": "mgos_time_changed_arg",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Event data for the `MGOS_EVENT_TIME_CHANGED` event, see\n`mgos_event_add_handler()`."
+  },
+  {
+    "file": "../../fw/include/mgos_time.h",
+    "line": 20,
+    "name": "delta",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_time_changed_arg",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_time.h",
+    "line": 23,
+    "name": "timezone",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_time.h",
+    "line": 26,
+    "name": "mgos_uptime",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Get number of seconds since last reboot"
+  },
+  {
+    "file": "../../fw/include/mgos_time.h",
+    "line": 32,
+    "name": "mgos_strftime",
+    "type": "function",
+    "args": "(char *s, int size, char *fmt, int time)",
+    "scope": "",
+    "doc": "Format `time` according to a `strftime()`-conformant format.\nWrite the result into the `s,size` buffer. Return resulting string length."
+  },
+  {
+    "file": "../../fw/include/mgos_time.h",
+    "line": 39,
+    "name": "mgos_settimeofday",
+    "type": "function",
+    "args": "(double time, struct timezone *tz)",
+    "scope": "",
+    "doc": "Like standard `settimeofday()`, but uses `double` seconds value instead of\n`struct timeval *tv`. If time was changed successfully, emits an event\n`MGOS_EVENT_TIME_CHANGED`."
+  },
+  {
+    "file": "../../fw/include/mgos_timers.h",
+    "line": 26,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": " Timers API.\n\n Mongoose OS supports two types of timers: software timers and hardware\n timers.\n\n - Software timers. Implemented as Mongoose library events, in software.\n   Timer callback is called in a Mongoose task context. Frequency is\n   specified in milliseconds. Number of software timers is not limited.\n   Timer intervals cannot be short - limited by the underlying\n   task scheduling. For example, if you want a very frequent sensor reading,\n   like thousand readings a second, use hardware timer instead.\n   Both C and JavaScript API is available.\n - Hardware timers. Implemented in hardware. Timer callback is executed in\n   the ISR context, therefore it can do a limited set of actions.\n   Number of hardware timers is limied: (ESP8266: 1, ESP32: 4, CC32xx: 4).\n   Frequency is specified in microseconds. Only C API is present, because\n   calling to JS requires switching to Mongoose task context."
+  },
+  {
+    "file": "../../fw/include/mgos_timers.h",
+    "line": 37,
+    "name": "MGOS_INVALID_TIMER_ID",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "HAL"
+  },
+  {
+    "file": "../../fw/include/mgos_timers.h",
+    "line": 40,
+    "name": "timer_callback",
+    "type": "typedef",
+    "args": "(void *param)",
+    "scope": "",
+    "doc": "Timer callback"
+  },
+  {
+    "file": "../../fw/include/mgos_timers.h",
+    "line": 43,
+    "name": "mgos_timer_id",
+    "type": "typedef",
+    "args": "",
+    "scope": "",
+    "doc": "Timer ID type"
+  },
+  {
+    "file": "../../fw/include/mgos_timers.h",
+    "line": 51,
+    "name": "MGOS_TIMER_REPEAT",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": " Flag for mgos_set*_timer().\n\n When it's set, the call is repeated indefinitely; otherwise the call is a\n one-off."
+  },
+  {
+    "file": "../../fw/include/mgos_timers.h",
+    "line": 79,
+    "name": "mgos_set_timer",
+    "type": "function",
+    "args": "(int msecs, int flags, timer_callback cb,\n                             void *cb_arg)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_timers.h",
+    "line": 92,
+    "name": "mgos_set_hw_timer",
+    "type": "function",
+    "args": "(int usecs, int flags, timer_callback cb,\n                                void *cb_arg)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_timers.h",
+    "line": 97,
+    "name": "mgos_clear_timer",
+    "type": "function",
+    "args": "(mgos_timer_id id)",
+    "scope": "",
+    "doc": "Disable timer with a given timer ID."
+  },
+  {
+    "file": "../../fw/include/mgos_timers.h",
+    "line": 100,
+    "name": "mgos_uptime",
+    "type": "function",
+    "args": "(void)",
+    "scope": "",
+    "doc": "Get number of seconds since last reboot"
+  },
+  {
+    "file": "../../fw/include/mgos_timers.h",
+    "line": 106,
+    "name": "mgos_strftime",
+    "type": "function",
+    "args": "(char *s, int size, char *fmt, int time)",
+    "scope": "",
+    "doc": "Format `time` according to a `strftime()`-conformant format.\nWrite the result into the `s,size` buffer. Return resulting string length."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 13,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": " UART API.\n\n See https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter\n for more information about UART."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 30,
+    "name": "mgos_uart_dev_config",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 38,
+    "name": "mgos_uart_fc_type",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "UART flow control type"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 39,
+    "name": "MGOS_UART_FC_NONE",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_fc_type",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 40,
+    "name": "MGOS_UART_FC_HW",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_fc_type",
+    "doc": "CTS/RTS"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 41,
+    "name": "MGOS_UART_FC_SW",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_fc_type",
+    "doc": "XON/XOFF"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 45,
+    "name": "mgos_uart_parity",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "UART parity"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 46,
+    "name": "MGOS_UART_PARITY_NONE",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_parity",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 47,
+    "name": "MGOS_UART_PARITY_EVEN",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_parity",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 48,
+    "name": "MGOS_UART_PARITY_ODD",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_parity",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 52,
+    "name": "mgos_uart_stop_bits",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "UART stop bits mode"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 53,
+    "name": "MGOS_UART_STOP_BITS_1",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_stop_bits",
+    "doc": "So that 1 means 1 bit and 2 means 2."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 54,
+    "name": "MGOS_UART_STOP_BITS_2",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_stop_bits",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 55,
+    "name": "MGOS_UART_STOP_BITS_1_5",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_stop_bits",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 58,
+    "name": "mgos_uart_config",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 59,
+    "name": "baud_rate",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_config",
+    "doc": "Baud rate. Default: 115200"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 60,
+    "name": "num_data_bits",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_config",
+    "doc": "Number of data bits, 5-8. Default: 8"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 61,
+    "name": "mgos_uart_parity",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "Parity. Default: none"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 61,
+    "name": "parity",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_config",
+    "doc": "Parity. Default: none"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 62,
+    "name": "mgos_uart_stop_bits",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "Number of stop bits. Default: 1"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 62,
+    "name": "stop_bits",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_config",
+    "doc": "Number of stop bits. Default: 1"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 65,
+    "name": "rx_buf_size",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_config",
+    "doc": "Size of the Rx buffer, default: 256"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 67,
+    "name": "rx_fc_type",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_config",
+    "doc": "Enable flow control for Rx (RTS pin), default: off"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 67,
+    "name": "mgos_uart_fc_type",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "Enable flow control for Rx (RTS pin), default: off"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 72,
+    "name": "rx_linger_micros",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_config",
+    "doc": "Lingers for this many microseconds after RX fifo is empty in case more\ndata arrives. Default: 15."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 75,
+    "name": "tx_buf_size",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_config",
+    "doc": "Size of the Tx buffer, default: 256"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 77,
+    "name": "mgos_uart_fc_type",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "Enable flow control for Tx (CTS pin), default: off"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 77,
+    "name": "tx_fc_type",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_config",
+    "doc": "Enable flow control for Tx (CTS pin), default: off"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 80,
+    "name": "mgos_uart_dev_config",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Platform-specific configuration options."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 80,
+    "name": "dev",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_config",
+    "doc": "Platform-specific configuration options."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 83,
+    "name": "MGOS_UART_XON_CHAR",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 84,
+    "name": "MGOS_UART_XOFF_CHAR",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 105,
+    "name": "mgos_uart_configure",
+    "type": "function",
+    "args": "(int uart_no, const struct mgos_uart_config *cfg)",
+    "scope": "",
+    "doc": " Apply given UART configuration.\n\n Example:\n ```c\n int uart_no = 0;\n\n struct mgos_uart_config ucfg;\n mgos_uart_config_set_defaults(uart_no, \u0026ucfg);\n\n ucfg.baud_rate = 115200;\n ucfg.rx_buf_size = 1500;\n ucfg.tx_buf_size = 1500;\n\n if (!mgos_uart_configure(uart_no, \u0026ucfg)) {\n   LOG(LL_ERROR, (\"Failed to configure UART%d\", uart_no));\n }\n ```"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 110,
+    "name": "mgos_uart_config_set_defaults",
+    "type": "function",
+    "args": "(int uart_no, struct mgos_uart_config *cfg)",
+    "scope": "",
+    "doc": "Fill provided `cfg` structure with the default values. See example above."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 116,
+    "name": "mgos_uart_config_get",
+    "type": "function",
+    "args": "(int uart_no, struct mgos_uart_config *cfg)",
+    "scope": "",
+    "doc": "Fill provided `cfg` structure with the current UART config.\nReturns false if the specified UART has not bee configured yet."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 119,
+    "name": "mgos_uart_dispatcher_t",
+    "type": "typedef",
+    "args": "(int uart_no, void *arg)",
+    "scope": "",
+    "doc": "UART dispatcher signature, see `mgos_uart_set_dispatcher()`"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 126,
+    "name": "mgos_uart_set_dispatcher",
+    "type": "function",
+    "args": "(int uart_no, mgos_uart_dispatcher_t cb,\n                              void *arg)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 134,
+    "name": "mgos_uart_write",
+    "type": "function",
+    "args": "(int uart_no, const void *buf, size_t len)",
+    "scope": "",
+    "doc": "Write data to the UART.\nNote: if there is enough space in the output buffer, the call will return\nimmediately, otherwise it will wait for buffer to drain.\nIf you want the call to not block, check mgos_uart_write_avail() first."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 137,
+    "name": "mgos_uart_write_avail",
+    "type": "function",
+    "args": "(int uart_no)",
+    "scope": "",
+    "doc": "Returns amount of space availabe in the output buffer."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 145,
+    "name": "mgos_uart_printf",
+    "type": "function",
+    "args": "(int uart_no, const char *fmt, ...)",
+    "scope": "",
+    "doc": "Write data to UART, printf style.\nNote: currently this requires that data is fully rendered in memory before\nsending. There is no fixed limit as heap allocation is used, but be careful\nwhen printing longer strings."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 152,
+    "name": "mgos_uart_read",
+    "type": "function",
+    "args": "(int uart_no, void *buf, size_t len)",
+    "scope": "",
+    "doc": "Read data from UART input buffer.\nNote: unlike write, read will not block if there are not enough bytes in the\ninput buffer."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 155,
+    "name": "mgos_uart_read_mbuf",
+    "type": "function",
+    "args": "(int uart_no, struct mbuf *mb, size_t len)",
+    "scope": "",
+    "doc": "Like `mgos_uart_read`, but reads into an mbuf."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 158,
+    "name": "mgos_uart_read_avail",
+    "type": "function",
+    "args": "(int uart_no)",
+    "scope": "",
+    "doc": "Returns the number of bytes available for reading."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 161,
+    "name": "mgos_uart_set_rx_enabled",
+    "type": "function",
+    "args": "(int uart_no, bool enabled)",
+    "scope": "",
+    "doc": "Controls whether UART receiver is enabled."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 164,
+    "name": "mgos_uart_is_rx_enabled",
+    "type": "function",
+    "args": "(int uart_no)",
+    "scope": "",
+    "doc": "Returns whether UART receiver is enabled."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 167,
+    "name": "mgos_uart_flush",
+    "type": "function",
+    "args": "(int uart_no)",
+    "scope": "",
+    "doc": "Flush the UART output buffer - waits for data to be sent."
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 170,
+    "name": "mgos_uart_schedule_dispatcher",
+    "type": "function",
+    "args": "(int uart_no, bool from_isr)",
+    "scope": "",
+    "doc": "Schedule a call to dispatcher on the next `mongoose_poll`"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 173,
+    "name": "mgos_uart_stats",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "UART statistics"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 174,
+    "name": "ints",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_stats",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 176,
+    "name": "rx_ints",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_stats",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 177,
+    "name": "rx_bytes",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_stats",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 178,
+    "name": "rx_overflows",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_stats",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 179,
+    "name": "rx_linger_conts",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_stats",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 181,
+    "name": "tx_ints",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_stats",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 182,
+    "name": "tx_bytes",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_stats",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 183,
+    "name": "tx_throttles",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_stats",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 185,
+    "name": "dev_data",
+    "type": "member",
+    "args": "",
+    "scope": "mgos_uart_stats",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 189,
+    "name": "mgos_uart_stats",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Get UART statistics"
+  },
+  {
+    "file": "../../fw/include/mgos_uart.h",
+    "line": 189,
+    "name": "mgos_uart_get_stats",
+    "type": "function",
+    "args": "(int uart_no)",
+    "scope": "",
+    "doc": "Get UART statistics"
+  },
+  {
+    "file": "../../fw/include/mgos_utils.h",
+    "line": 10,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Misc utility functions."
+  },
+  {
+    "file": "../../fw/include/mgos_utils.h",
+    "line": 16,
+    "name": "MIN",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_utils.h",
+    "line": 19,
+    "name": "MAX",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../fw/include/mgos_utils.h",
+    "line": 27,
+    "name": "mgos_system_restart_after",
+    "type": "function",
+    "args": "(int delay_ms)",
+    "scope": "",
+    "doc": "Restart system after the specified number of milliseconds"
+  },
+  {
+    "file": "../../fw/include/mgos_utils.h",
+    "line": 30,
+    "name": "mgos_rand_range",
+    "type": "function",
+    "args": "(float from, float to)",
+    "scope": "",
+    "doc": "Return random number in a given range."
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 6,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Copyright (c) 2014-2016 Cesanta Software Limited\nAll rights reserved"
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 16,
+    "name": "CS_ENABLE_DEBUG",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 20,
+    "name": "CS_LOG_ENABLE_TS_DIFF",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 30,
+    "name": "cs_log_level",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": "Log level; `LL_INFO` is the default. Use `cs_log_set_level()` to change it."
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 31,
+    "name": "LL_NONE",
+    "type": "member",
+    "args": "",
+    "scope": "cs_log_level",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 32,
+    "name": "LL_ERROR",
+    "type": "member",
+    "args": "",
+    "scope": "cs_log_level",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 33,
+    "name": "LL_WARN",
+    "type": "member",
+    "args": "",
+    "scope": "cs_log_level",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 34,
+    "name": "LL_INFO",
+    "type": "member",
+    "args": "",
+    "scope": "cs_log_level",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 35,
+    "name": "LL_DEBUG",
+    "type": "member",
+    "args": "",
+    "scope": "cs_log_level",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 36,
+    "name": "LL_VERBOSE_DEBUG",
+    "type": "member",
+    "args": "",
+    "scope": "cs_log_level",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 38,
+    "name": "_LL_MIN",
+    "type": "member",
+    "args": "",
+    "scope": "cs_log_level",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 39,
+    "name": "_LL_MAX",
+    "type": "member",
+    "args": "",
+    "scope": "cs_log_level",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 46,
+    "name": "cs_log_set_level",
+    "type": "function",
+    "args": "(enum cs_log_level level)",
+    "scope": "",
+    "doc": "Set max log level to print; messages with the level above the given one will\nnot be printed."
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 80,
+    "name": "cs_log_set_filter",
+    "type": "function",
+    "args": "(const char *pattern)",
+    "scope": "",
+    "doc": " Set log filter. NULL (a default) logs everything.\n Otherwise, function name and file name will be tested against the given\n pattern, and only matching messages will be printed.\n\n For the pattern syntax, refer to `mg_match_prefix()` in `str_util.h`.\n\n Example:\n ```c\n void foo(void) {\n   LOG(LL_INFO, (\"hello from foo\"));\n }\n\n void bar(void) {\n   LOG(LL_INFO, (\"hello from bar\"));\n }\n\n void test(void) {\n   cs_log_set_filter(NULL);\n   foo();\n   bar();\n\n   cs_log_set_filter(\"f*\");\n   foo();\n   bar(); // Will NOT print anything\n\n   cs_log_set_filter(\"bar\");\n   foo(); // Will NOT print anything\n   bar();\n }\n ```"
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 91,
+    "name": "cs_log_print_prefix",
+    "type": "function",
+    "args": "(enum cs_log_level level, const char *func,\n                        const char *filename)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 93,
+    "name": "cs_log_level",
+    "type": "enum",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 93,
+    "name": "cs_log_threshold",
+    "type": "global",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 100,
+    "name": "cs_log_set_file",
+    "type": "function",
+    "args": "(FILE *file)",
+    "scope": "",
+    "doc": "Set file to write logs into. If `NULL`, logs go to `stderr`."
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 106,
+    "name": "cs_log_printf",
+    "type": "function",
+    "args": "(const char *fmt, ...)",
+    "scope": "",
+    "doc": "Prints log to the current log file, appends \"\\n\" in the end and flushes the\nstream."
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 108,
+    "name": "__attribute__",
+    "type": "function",
+    "args": "((format(printf, 1, 2)))",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 120,
+    "name": "LOG",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": " Format and print message `x` with the given level `l`. Example:\n\n ```c\n LOG(LL_INFO, (\"my info message: %d\", 123));\n LOG(LL_DEBUG, (\"my debug message: %d\", 123));\n ```"
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 130,
+    "name": "DBG",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "Shortcut for `LOG(LL_VERBOSE_DEBUG, (...))`"
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 134,
+    "name": "DBG",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 140,
+    "name": "LOG",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_dbg.h",
+    "line": 141,
+    "name": "DBG",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/cs_file.h",
+    "line": 6,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Copyright (c) 2015 Cesanta Software Limited\nAll rights reserved"
+  },
+  {
+    "file": "../../common/cs_file.h",
+    "line": 22,
+    "name": "cs_read_file",
+    "type": "function",
+    "args": "(const char *path, size_t *size)",
+    "scope": "",
+    "doc": "Read whole file `path` in memory. It is responsibility of the caller\nto `free()` allocated memory. File content is guaranteed to be\n'\\0'-terminated. File size is returned in `size` variable, which does not\ncount terminating `\\0`.\nReturn: allocated memory, or NULL on error."
+  },
+  {
+    "file": "../../common/cs_file.h",
+    "line": 29,
+    "name": "cs_mmap_file",
+    "type": "function",
+    "args": "(const char *path, size_t *size)",
+    "scope": "",
+    "doc": "Only on platforms which support mmapping: mmap file `path` to the returned\naddress. File size is written to `*size`."
+  },
+  {
+    "file": "../../common/mbuf.h",
+    "line": 15,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": " === Memory Buffers\n\n Mbufs are mutable/growing memory buffers, like C++ strings.\n Mbuf can append data to the end of a buffer or insert data into arbitrary\n position in the middle of a buffer. The buffer grows automatically when\n needed."
+  },
+  {
+    "file": "../../common/mbuf.h",
+    "line": 26,
+    "name": "MBUF_SIZE_MULTIPLIER",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/mbuf.h",
+    "line": 30,
+    "name": "mbuf",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Memory buffer descriptor"
+  },
+  {
+    "file": "../../common/mbuf.h",
+    "line": 31,
+    "name": "buf",
+    "type": "member",
+    "args": "",
+    "scope": "mbuf",
+    "doc": "Buffer pointer"
+  },
+  {
+    "file": "../../common/mbuf.h",
+    "line": 32,
+    "name": "len",
+    "type": "member",
+    "args": "",
+    "scope": "mbuf",
+    "doc": "Data length. Data is located between offset 0 and len."
+  },
+  {
+    "file": "../../common/mbuf.h",
+    "line": 33,
+    "name": "size",
+    "type": "member",
+    "args": "",
+    "scope": "mbuf",
+    "doc": "Buffer size allocated by realloc(1). Must be \u003e= len"
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 6,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Copyright (c) 2014-2016 Cesanta Software Limited\nAll rights reserved"
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 18,
+    "name": "mg_str",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Describes chunk of memory"
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 19,
+    "name": "p",
+    "type": "member",
+    "args": "",
+    "scope": "mg_str",
+    "doc": "Memory chunk pointer"
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 20,
+    "name": "len",
+    "type": "member",
+    "args": "",
+    "scope": "mg_str",
+    "doc": "Memory chunk length"
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 27,
+    "name": "mg_str",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Helper function for creating mg_str struct from plain C string.\n`NULL` is allowed and becomes `{NULL, 0}`."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 27,
+    "name": "mg_mk_str",
+    "type": "function",
+    "args": "(const char *s)",
+    "scope": "",
+    "doc": "Helper function for creating mg_str struct from plain C string.\n`NULL` is allowed and becomes `{NULL, 0}`."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 32,
+    "name": "mg_str",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Like `mg_mk_str`, but takes string length explicitly."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 32,
+    "name": "mg_mk_str_n",
+    "type": "function",
+    "args": "(const char *s, size_t len)",
+    "scope": "",
+    "doc": "Like `mg_mk_str`, but takes string length explicitly."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 35,
+    "name": "MG_MK_STR",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "Macro for initializing mg_str."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 37,
+    "name": "MG_NULL_STR",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 44,
+    "name": "mg_vcmp",
+    "type": "function",
+    "args": "(const struct mg_str *str2, const char *str1)",
+    "scope": "",
+    "doc": "Cross-platform version of `strcmp()` where where first string is\nspecified by `struct mg_str`."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 50,
+    "name": "mg_vcasecmp",
+    "type": "function",
+    "args": "(const struct mg_str *str2, const char *str1)",
+    "scope": "",
+    "doc": "Cross-platform version of `strncasecmp()` where first string is\nspecified by `struct mg_str`."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 53,
+    "name": "mg_str",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Creates a copy of s (heap-allocated)."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 53,
+    "name": "mg_strdup",
+    "type": "function",
+    "args": "(const struct mg_str s)",
+    "scope": "",
+    "doc": "Creates a copy of s (heap-allocated)."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 59,
+    "name": "mg_str",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Creates a copy of s (heap-allocated).\nResulting string is NUL-terminated (but NUL is not included in len)."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 59,
+    "name": "mg_strdup_nul",
+    "type": "function",
+    "args": "(const struct mg_str s)",
+    "scope": "",
+    "doc": "Creates a copy of s (heap-allocated).\nResulting string is NUL-terminated (but NUL is not included in len)."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 64,
+    "name": "mg_strchr",
+    "type": "function",
+    "args": "(const struct mg_str s, int c)",
+    "scope": "",
+    "doc": "Locates character in a string."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 69,
+    "name": "mg_strcmp",
+    "type": "function",
+    "args": "(const struct mg_str str1, const struct mg_str str2)",
+    "scope": "",
+    "doc": "Compare two `mg_str`s; return value is the same as `strcmp`."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 74,
+    "name": "mg_strncmp",
+    "type": "function",
+    "args": "(const struct mg_str str1, const struct mg_str str2, size_t n)",
+    "scope": "",
+    "doc": "Like `mg_strcmp`, but compares at most `n` characters."
+  },
+  {
+    "file": "../../common/mg_str.h",
+    "line": 79,
+    "name": "mg_strstr",
+    "type": "function",
+    "args": "(const struct mg_str haystack, const struct mg_str needle)",
+    "scope": "",
+    "doc": "Finds the first occurrence of a substring `needle` in the `haystack`."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 6,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": "Copyright (c) 2015 Cesanta Software Limited\nAll rights reserved"
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 16,
+    "name": "CS_ENABLE_STRDUP",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 20,
+    "name": "CS_ENABLE_TO64",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 27,
+    "name": "CS_STRINGIFY_LIT",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "Expands to a string representation of its argument: e.g.\n`CS_STRINGIFY_LIT(5) expands to \"5\"`"
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 38,
+    "name": "CS_STRINGIFY_MACRO",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": " Expands to a string representation of its argument, which is allowed\n to be a macro: e.g.\n\n #define FOO 123\n CS_STRINGIFY_MACRO(FOO)\n\n expands to 123."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 47,
+    "name": "c_strnlen",
+    "type": "function",
+    "args": "(const char *s, size_t maxlen)",
+    "scope": "",
+    "doc": "Equivalent of standard `strnlen()`."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 52,
+    "name": "c_snprintf",
+    "type": "function",
+    "args": "(char *buf, size_t buf_size, const char *format, ...)",
+    "scope": "",
+    "doc": "Equivalent of standard `snprintf()`."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 57,
+    "name": "c_vsnprintf",
+    "type": "function",
+    "args": "(char *buf, size_t buf_size, const char *format, va_list ap)",
+    "scope": "",
+    "doc": "Equivalent of standard `vsnprintf()`."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 63,
+    "name": "c_strnstr",
+    "type": "function",
+    "args": "(const char *s, const char *find, size_t slen)",
+    "scope": "",
+    "doc": "Find the first occurrence of find in s, where the search is limited to the\nfirst slen characters of s."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 70,
+    "name": "cs_to_hex",
+    "type": "function",
+    "args": "(char *to, const unsigned char *p, size_t len)",
+    "scope": "",
+    "doc": "Stringify binary data. Output buffer size must be 2 * size_of_input + 1\nbecause each byte of input takes 2 bytes in string representation\nplus 1 byte for the terminating \\0 character."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 76,
+    "name": "cs_from_hex",
+    "type": "function",
+    "args": "(char *to, const char *p, size_t len)",
+    "scope": "",
+    "doc": "Convert stringified binary data back to binary.\nDoes the reverse of `cs_to_hex()`."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 82,
+    "name": "strdup",
+    "type": "function",
+    "args": "(const char *src)",
+    "scope": "",
+    "doc": "Equivalent of standard `strdup()`, defined if only `CS_ENABLE_STRDUP` is 1."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 90,
+    "name": "cs_to64",
+    "type": "function",
+    "args": "(const char *s)",
+    "scope": "",
+    "doc": "Simple string -\u003e int64 conversion routine."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 96,
+    "name": "mg_ncasecmp",
+    "type": "function",
+    "args": "(const char *s1, const char *s2, size_t len)",
+    "scope": "",
+    "doc": "Cross-platform version of `strncasecmp()`."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 101,
+    "name": "mg_casecmp",
+    "type": "function",
+    "args": "(const char *s1, const char *s2)",
+    "scope": "",
+    "doc": "Cross-platform version of `strcasecmp()`."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 120,
+    "name": "mg_asprintf",
+    "type": "function",
+    "args": "(char **buf, size_t size, const char *fmt, ...)",
+    "scope": "",
+    "doc": " Prints message to the buffer. If the buffer is large enough to hold the\n message, it returns buffer. If buffer is to small, it allocates a large\n enough buffer on heap and returns allocated buffer.\n This is a supposed use case:\n\n ```c\n    char buf[5], *p = buf;\n    mg_avprintf(\u0026p, sizeof(buf), \"%s\", \"hi there\");\n    use_p_somehow(p);\n    if (p != buf) {\n      free(p);\n    }\n ```\n\n The purpose of this is to avoid malloc-ing if generated strings are small."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 123,
+    "name": "mg_avprintf",
+    "type": "function",
+    "args": "(char **buf, size_t size, const char *fmt, va_list ap)",
+    "scope": "",
+    "doc": "Same as mg_asprintf, but takes varargs list."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 139,
+    "name": "mg_next_comma_list_entry",
+    "type": "function",
+    "args": "(const char *list, struct mg_str *val,\n                                     struct mg_str *eq_val)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 144,
+    "name": "mg_str",
+    "type": "struct",
+    "args": "",
+    "scope": "",
+    "doc": "Like `mg_next_comma_list_entry()`, but takes `list` as `struct mg_str`."
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 145,
+    "name": "mg_next_comma_list_entry_n",
+    "type": "function",
+    "args": "(struct mg_str list, struct mg_str *val,\n                                         struct mg_str *eq_val)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 168,
+    "name": "mg_match_prefix",
+    "type": "function",
+    "args": "(const char *pattern, int pattern_len, const char *str)",
+    "scope": "",
+    "doc": "Matches 0-terminated string (mg_match_prefix) or string with given length\nmg_match_prefix_n against a glob pattern. Glob syntax:\n```\n- * matches zero or more characters until a slash character /\n- ** matches zero or more characters\n- ? Matches exactly one character which is not a slash /\n- | or ,  divides alternative patterns\n- any other character matches itself\n```\nMatch is case-insensitive. Returns number of bytes matched, or -1 if no\nmatch.\nExamples:\n```\nmg_match_prefix(\"a*f\", len, \"abcdefgh\") == 6\nmg_match_prefix(\"a*f\", len, \"abcdexgh\") == -1\nmg_match_prefix(\"a*f|de*,xy\", len, \"defgh\") == 5\nmg_match_prefix(\"?*\", len, \"abc\") == 3\nmg_match_prefix(\"?*\", len, \"\") == -1\n```"
+  },
+  {
+    "file": "../../common/str_util.h",
+    "line": 173,
+    "name": "mg_match_prefix_n",
+    "type": "function",
+    "args": "(const struct mg_str pattern, const struct mg_str str)",
+    "scope": "",
+    "doc": "Like `mg_match_prefix()`, but takes `pattern` and `str` as `struct mg_str`."
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 18,
+    "name": "",
+    "type": "module",
+    "args": "",
+    "scope": "",
+    "doc": " Copyright (c) 2015 Cesanta Software Limited\n All rights reserved\n This software is dual-licensed: you can redistribute it and/or modify\n it under the terms of the GNU General Public License version 2 as\n published by the Free Software Foundation. For the terms of this\n license, see \u003chttp://www.gnu.org/licenses/\u003e.\n\n You are free to use this software under the terms of the GNU General\n Public License, but WITHOUT ANY WARRANTY; without even the implied\n warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n See the GNU General Public License for more details.\n\n Alternatively, you can license this software under a commercial\n license, as set out in \u003chttps://www.cesanta.com/license\u003e."
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 30,
+    "name": "num_tests",
+    "type": "global",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 33,
+    "name": "MG_TEST_ABORT",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 35,
+    "name": "MG_TEST_ABORT",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 38,
+    "name": "_assert_streq",
+    "type": "function",
+    "args": "(const char *actual, const char *expected)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 39,
+    "name": "_assert_streq_nz",
+    "type": "function",
+    "args": "(const char *actual, const char *expected)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 40,
+    "name": "_strfail",
+    "type": "function",
+    "args": "(const char *a, const char *e, int len)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 42,
+    "name": "FAIL",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 49,
+    "name": "ASSERT",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 58,
+    "name": "RUN_TEST",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "Run test function, use its name as the test name to print"
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 63,
+    "name": "RUN_TEST_WNAME",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "Run test function, use the provided name as the test name to print"
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 79,
+    "name": "AS_DOUBLE",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 81,
+    "name": "AS_DOUBLE",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 88,
+    "name": "ASSERT_EQ",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "Numeric equality assertion. Comparison is made in native types but for\nprinting both are convetrted to double."
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 98,
+    "name": "ASSERT_LT",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "\"Less than\" assertion."
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 108,
+    "name": "ASSERT_GT",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "\"Greater than\" assertion."
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 118,
+    "name": "ASSERT_STREQ",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "Assert that actual == expected, where both are NUL-terminated."
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 127,
+    "name": "ASSERT_PTREQ",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "Assert that actual == expected, where both are pointers"
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 137,
+    "name": "ASSERT_PTRNEQ",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "Assert that actual != expected, where both are pointers"
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 147,
+    "name": "ASSERT_STREQ_NZ",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": "Same as STREQ, but only expected is NUL-terminated."
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 155,
+    "name": "ASSERT_MG_STREQ",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 167,
+    "name": "MG_ENABLE_POLL_UNTIL",
+    "type": "define",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 172,
+    "name": "c_str_ne",
+    "type": "function",
+    "args": "(void *a, void *b)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 173,
+    "name": "c_int_ne",
+    "type": "function",
+    "args": "(void *a, void *b)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 174,
+    "name": "c_int_eq",
+    "type": "function",
+    "args": "(void *a, void *b)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../common/test_util.h",
+    "line": 176,
+    "name": "poll_until",
+    "type": "function",
+    "args": "(struct mg_mgr *mgr, double timeout, int (*cond)(void *, void *),\n                void *cond_arg1, void *cond_arg2)",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 12,
+    "name": "DataView",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": "**DataView API**\n\nSee the original API definition at [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView).\n\nmJS DataView diverges from the original in the following ways:\n\n- No `ArrayBuffer`; plain pointers should be used instead;\n- Since there are no constructors in mJS, `DataView.create()` should be\n  used instead;\n- No float support yet (will be added)"
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 29,
+    "name": "create",
+    "type": "function",
+    "args": "(buf, off, len)",
+    "scope": "DataView",
+    "doc": "## **`DataView.create(buf, offset, len)`**\nCreate a DataView object instance. `buf` is a pointer to a plain byte\narray, `offset` is an offset in in this buffer to start dataview from, and\n`len` is a length managed by dataview.\n\nReturn value: an object with the methods described below.\n\nExample:\n  ```javascript\n  load(\"api_dataview.js\");\n  let calloc = ffi('void *calloc(int, int)');\n  let ptr = calloc(100, 1);\n  let dw = DataView.create(ptr, 0, 100);\n\n  dw.setUint8(2, 0xff);\n  ```"
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 39,
+    "name": "_prot",
+    "type": "member",
+    "args": "",
+    "scope": "DataView",
+    "doc": ""
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 44,
+    "name": "getInt8",
+    "type": "function",
+    "args": "(idx)",
+    "scope": "_prot",
+    "doc": "## **`myDW.getInt8(idx)`**\nGet a signed byte value from the dataview's buffer at the given index\n`idx`. Returned value: a number from -128 to 127."
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 56,
+    "name": "getUint8",
+    "type": "function",
+    "args": "(idx)",
+    "scope": "_prot",
+    "doc": "## **`myDW.getUint8(idx)`**\nGet an unsigned byte value from the dataview's buffer at the given index\n`idx`. Returned value: a number from 0 to 255."
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 70,
+    "name": "getInt16",
+    "type": "function",
+    "args": "(idx, le)",
+    "scope": "_prot",
+    "doc": "## **`myDW.getInt16(idx, le)`**\nGet a signed 2-byte value from the dataview's buffer at the given index\n`idx`. By default the data interpreted as big-endian; if `le` is true,\nthen little-endian will be used.\nReturned value: a number from -32768 to 32767."
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 84,
+    "name": "getUint16",
+    "type": "function",
+    "args": "(idx, le)",
+    "scope": "_prot",
+    "doc": "## **`myDW.getUint16(idx, le)`**\nGet an unsigned 2-byte value from the dataview's buffer at the given\nindex `idx`. By default the data interpreted as big-endian; if `le` is\ntrue, then little-endian will be used.\nReturned value: a number from 0 to 65535."
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 98,
+    "name": "getInt32",
+    "type": "function",
+    "args": "(idx, le)",
+    "scope": "_prot",
+    "doc": "## **`myDW.getInt32(idx, le)`**\nGet a signed 4-byte value from the dataview's buffer at the given index\n`idx`. By default the data interpreted as big-endian; if `le` is true,\nthen little-endian will be used.\nReturned value: a number from -2147483648 to 2147483647."
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 112,
+    "name": "getUint32",
+    "type": "function",
+    "args": "(idx, le)",
+    "scope": "_prot",
+    "doc": "## **`myDW.getUint32(idx, le)`**\nGet an unsigned 4-byte value from the dataview's buffer at the given\nindex `idx`. By default the data interpreted as big-endian; if `le` is\ntrue, then little-endian will be used.\nReturned value: a number from 0 to 4294967295."
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 125,
+    "name": "setInt8",
+    "type": "function",
+    "args": "(idx, val)",
+    "scope": "_prot",
+    "doc": "## **`myDW.setInt8(idx, val)`**\nSet a signed byte value into the dataview's buffer at the given index\n`idx`. `val` should be a number from -128 to 127.\nReturned value: none."
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 138,
+    "name": "setUint8",
+    "type": "function",
+    "args": "(idx, val)",
+    "scope": "_prot",
+    "doc": "## **`myDW.setUint8(idx, val)`**\nSet an unsigned byte value into the dataview's buffer at the given index\n`idx`. `val` should be a number from -128 to 127.\nReturned value: none."
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 153,
+    "name": "setInt16",
+    "type": "function",
+    "args": "(idx, val, le)",
+    "scope": "_prot",
+    "doc": "## **`myDW.setInt16(idx, val, le)`**\nSet a signed 2-byte value into the dataview's buffer at the given index\n`idx`. `val` should be a number from -32768 to 32767. By default the\ndata is written in big-endian format; if `le` is true, then\nlittle-endian will be used.\nReturned value: none."
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 168,
+    "name": "setUint16",
+    "type": "function",
+    "args": "(idx, val, le)",
+    "scope": "_prot",
+    "doc": "## **`myDW.setUint16(idx, val, le)`**\nSet an unsigned 2-byte value into the dataview's buffer at the given\nindex `idx`. `val` should be a number from 0 to 65535. By default the\ndata is written in big-endian format; if `le` is true, then\nlittle-endian will be used.\nReturned value: none."
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 183,
+    "name": "setInt32",
+    "type": "function",
+    "args": "(idx, val, le)",
+    "scope": "_prot",
+    "doc": "## **`myDW.setInt32(idx, val, le)`**\nSet a signed 4-byte value into the dataview's buffer at the given index\n`idx`. `val` should be a number from -2147483648 to 2147483647. By\ndefault the data is written in big-endian format; if `le` is true, then\nlittle-endian will be used.\nReturned value: none."
+  },
+  {
+    "file": "../../mjs/lib/api_dataview.js",
+    "line": 198,
+    "name": "setUint32",
+    "type": "function",
+    "args": "(idx, val, le)",
+    "scope": "_prot",
+    "doc": "## **`myDW.setUint32(idx, val, le)`**\nSet an unsigned 4-byte value into the dataview's buffer at the given\nindex `idx`. `val` should be a number from 0 to 4294967295. By default\nthe data is written in big-endian format; if `le` is true, then\nlittle-endian will be used.\nReturned value: none."
+  },
+  {
+    "file": "../../mjs/lib/api_file.js",
+    "line": 1,
+    "name": "File",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mjs/lib/api_file.js",
+    "line": 12,
+    "name": "read",
+    "type": "function",
+    "args": "(path)",
+    "scope": "File",
+    "doc": "**`File.read(name)`**\nRead the whole file into a string variable.\n\nReturn value: a string contents of the file.\nIf file does not exist, an empty string is returned.\n\nExample: read a .json configuration file into a config object:\n```javascript\nlet obj = JSON.parse(File.read('settings.json'));\n```"
+  },
+  {
+    "file": "../../mjs/lib/api_file.js",
+    "line": 26,
+    "name": "remove",
+    "type": "member",
+    "args": "",
+    "scope": "File",
+    "doc": "**`File.remove(name)`**\nDelete file with a given name. Return value: 0\non success, non-0 on failure."
+  },
+  {
+    "file": "../../mjs/lib/api_file.js",
+    "line": 30,
+    "name": "rename",
+    "type": "member",
+    "args": "",
+    "scope": "File",
+    "doc": "**`File.rename(old, new)`**\nRename file `old` to `new`. Return 0 on success, non-0 on failure."
+  },
+  {
+    "file": "../../mjs/lib/api_file.js",
+    "line": 44,
+    "name": "write",
+    "type": "function",
+    "args": "(str, path, oMode)",
+    "scope": "File",
+    "doc": "**`File.write(str, name, mode)`**\nWrite string `str` into file `name`.\n\nIf file does not exist, it is created. `mode` is an optional file open\nmode argument, `'w'` by default, which means that previous content is\ndeleted. Set `mode` to `'a'` in order to append to the existing content.\nReturn value: number of bytes written.\n\nExample - write a configuration object into a file:\n```javascript\nFile.write(JSON.stringify(obj, 'settings.json'));\n```"
+  },
+  {
+    "file": "../../mjs/lib/api_file.js",
+    "line": 59,
+    "name": "fopen",
+    "type": "member",
+    "args": "",
+    "scope": "File",
+    "doc": ""
+  },
+  {
+    "file": "../../mjs/lib/api_file.js",
+    "line": 60,
+    "name": "fclose",
+    "type": "member",
+    "args": "",
+    "scope": "File",
+    "doc": ""
+  },
+  {
+    "file": "../../mjs/lib/api_file.js",
+    "line": 61,
+    "name": "fread",
+    "type": "member",
+    "args": "",
+    "scope": "File",
+    "doc": ""
+  },
+  {
+    "file": "../../mjs/lib/api_file.js",
+    "line": 62,
+    "name": "fwrite",
+    "type": "member",
+    "args": "",
+    "scope": "File",
+    "doc": ""
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 1,
+    "name": "Math",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 6,
+    "name": "ceil",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": "## **`Math.ceil(x)`**\nRounds x upward, returning the smallest integral value that is not less\nthan x."
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 11,
+    "name": "floor",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": "## **`Math.floor(x)`**\nRounds x downward, returning the largest integral value that is not\ngreater than x."
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 16,
+    "name": "round",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": "## **`Math.round(x)`**\nReturns the integral value that is nearest to x, with halfway cases\nrounded away from zero."
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 21,
+    "name": "max",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": "## **`Math.max(x, y)`**\nReturns the larger of its arguments: either `x` or `y`.\nIf one of the arguments in a NaN, the other is returned."
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 26,
+    "name": "min",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": "## **`Math.min(x, y)`**\nReturns the smaller of its arguments: either `x` or `y`.\nIf one of the arguments in a NaN, the other is returned."
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 30,
+    "name": "abs",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": "## **`Math.abs(x)`**\nReturns the absolute value of `x`: |x|."
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 34,
+    "name": "sqrt",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": "## **`Math.sqrt(x)`**\nReturns the square root of `x`."
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 39,
+    "name": "exp",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": "## **`Math.floor(x)`**\nReturns the base-e exponential function of `x`, which is e raised to the\npower `x`."
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 43,
+    "name": "log",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": "## **`Math.log(x)`**\nReturns the natural logarithm of `x`."
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 47,
+    "name": "pow",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": "## **`Math.pow(base, exponent)`**\nReturns `base` raised to the power `exponent`"
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 51,
+    "name": "sin",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": "## **`Math.sin(x)`**\nReturns the sine of an angle of `x` radians."
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 55,
+    "name": "cos",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": "## **`Math.cos(x)`**\nReturns the cosine of an angle of `x` radians."
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 59,
+    "name": "random",
+    "type": "function",
+    "args": "()",
+    "scope": "Math",
+    "doc": "## **`Math.random(x)`**\nReturns the pseudo-random number from 0.0 to 1.0"
+  },
+  {
+    "file": "../../mjs/lib/api_math.js",
+    "line": 61,
+    "name": "rand",
+    "type": "member",
+    "args": "",
+    "scope": "Math",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_bitbang.js",
+    "line": 1,
+    "name": "BitBang",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_bitbang.js",
+    "line": 2,
+    "name": "DELAY_MSEC",
+    "type": "member",
+    "args": "",
+    "scope": "BitBang",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_bitbang.js",
+    "line": 3,
+    "name": "DELAY_USEC",
+    "type": "member",
+    "args": "",
+    "scope": "BitBang",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_bitbang.js",
+    "line": 4,
+    "name": "DELAY_100NSEC",
+    "type": "member",
+    "args": "",
+    "scope": "BitBang",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_bitbang.js",
+    "line": 13,
+    "name": "write",
+    "type": "function",
+    "args": "(pin, delay_unit, t0h, t0l, t1h, t1l, ptr, len)",
+    "scope": "BitBang",
+    "doc": "## **`BitBang.write(pin, delay_unit, t0h, t0l, t1h, t1l, ptr, len)`**\nWrite bits to a given `pin`. `delay_unit` is one of the:\n`BitBang.DELAY_MSEC`, `BitBang.DELAY_USEC`, `BitBang.DELAY_100NSEC`.\n`ptr, len` is a bit pattern to write. `t0h, t0l` is the time pattern\nfor zero bit, `t1h, t1l` is the time pattern for 1. The time pattern\nspecifies the number of time units to hold the pin high, and the number\nof units to hold the pin low. Return value: none."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_bitbang.js",
+    "line": 18,
+    "name": "_wb",
+    "type": "member",
+    "args": "",
+    "scope": "BitBang",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 1,
+    "name": "Cfg",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 2,
+    "name": "_get",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 3,
+    "name": "_set",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 4,
+    "name": "_desc",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 5,
+    "name": "_find",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 6,
+    "name": "_type",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 7,
+    "name": "_str",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 8,
+    "name": "_int",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 9,
+    "name": "_dbl",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 10,
+    "name": "_INT",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 11,
+    "name": "_BOOL",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 12,
+    "name": "_DBL",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 13,
+    "name": "_STR",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 14,
+    "name": "_OBJ",
+    "type": "member",
+    "args": "",
+    "scope": "Cfg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 28,
+    "name": "get",
+    "type": "function",
+    "args": "(path)",
+    "scope": "Cfg",
+    "doc": "## **`Cfg.get(path)`**\nGet the config value by the configuration variable. Currently, only\nsimple types are returned: strings, ints, booleans, doubles. Objects\nare not yet supported.\n\nExamples:\n```javascript\nload('api_config.js');\nCfg.get('device.id');        // returns a string\nCfg.get('debug.level');      // returns an integer\nCfg.get('wifi.sta.enable');  // returns a boolean\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_config.js",
+    "line": 60,
+    "name": "set",
+    "type": "function",
+    "args": "(obj, save)",
+    "scope": "Cfg",
+    "doc": "## **`Cfg.set(obj, opt_save)`**\nSet the configuration. `obj` must be a subset of the whole configuation\ntree. `save` is boolean flag that indicating whether the change should\nbe saved - it could be omitted, in which case it defaults to `true`.\nExamples:\n```javascript\nload('api_config.js');\nCfg.set({wifi: {ap: {enable: false}}});  // Disable WiFi AP mode\nCfg.set({debug: {level: 3}});            // Set debug level to 3\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 1,
+    "name": "Event",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 14,
+    "name": "addHandler",
+    "type": "member",
+    "args": "",
+    "scope": "Event",
+    "doc": "## **`Event.addHandler(ev, callback, userdata)`**\nAdd a handler for the given event `ev`. Callback should look like:\n\nfunction(ev, evdata, userdata) { /* ... */ }\n\nExample:\n```javascript\n\nEvent.addHandler(Event.REBOOT, function(ev, evdata, ud) {\n  print(\"Going to reboot!\");\n}, null);\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 15,
+    "name": "",
+    "type": "member",
+    "args": "",
+    "scope": "Event",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 15,
+    "name": "",
+    "type": "member",
+    "args": "",
+    "scope": "Event",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 29,
+    "name": "addGroupHandler",
+    "type": "member",
+    "args": "",
+    "scope": "Event",
+    "doc": "## **`Event.addGroupHandler(evgrp, callback, userdata)`**\nLike `Event.addHandler()`, but subscribes on all events in the given\nevent group `evgrp`. Event group includes all events from `evgrp \u0026 ~0xff`\nto `evgrp | 0xff`.\n\nExample:\n```javascript\n\nEvent.addGroupHandler(Event.SYS, function(ev, evdata, ud) {\n  print(\"Sys event:\", ev);\n}, null);\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 30,
+    "name": "",
+    "type": "member",
+    "args": "",
+    "scope": "Event",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 30,
+    "name": "",
+    "type": "member",
+    "args": "",
+    "scope": "Event",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 48,
+    "name": "regBase",
+    "type": "member",
+    "args": "",
+    "scope": "Event",
+    "doc": "## **`Event.regBase(base_event_number, name)`**\nRegister a base event number in order to prevent event number conflicts.\nUse `Event.baseNumber(id)` to get `base_event_number`; `name` is an\narbitrary event name.\n\nExample:\n```javascript\nlet bn = Event.baseNumber(\"ABC\");\nif (!Event.regBase(bn, \"My module\")) {\n  die(\"Failed to register base event number\");\n}\n\nlet MY_EVENT_FOO = bn + 0;\nlet MY_EVENT_BAR = bn + 1;\nlet MY_EVENT_BAZ = bn + 2;\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 57,
+    "name": "baseNumber",
+    "type": "function",
+    "args": "(id)",
+    "scope": "Event",
+    "doc": "## **`Event.baseNumber(id)`**\nGenerates unique base event number (32-bit) by a 3-char string.\nLSB is always zero, and a library can use it to create up to 256 unique\nevents.\n\nA library should call `Event.regBase()` in order to claim\nit and prevent event number conflicts. (see example there)"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 68,
+    "name": "trigger",
+    "type": "member",
+    "args": "",
+    "scope": "Event",
+    "doc": "## **`Event.trigger(ev, evdata)`**\nTrigger an event with the given id `ev` and event data `evdata`."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 73,
+    "name": "evdataLogStr",
+    "type": "function",
+    "args": "(evdata)",
+    "scope": "Event",
+    "doc": "## **`Event.evdataLogStr(evdata)`**\nGetter function for the `evdata` given to the event callback for the event\n`Event.LOG`, see `Event.addHandler()`."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 77,
+    "name": "_gdd",
+    "type": "member",
+    "args": "",
+    "scope": "Event",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_events.js",
+    "line": 78,
+    "name": "_gdl",
+    "type": "member",
+    "args": "",
+    "scope": "Event",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 1,
+    "name": "GPIO",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 5,
+    "name": "set_mode",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": "## **`GPIO.set_mode(pin, mode)`**\nSet GPIO pin mode.\n`mode` can be either `GPIO.MODE_INPUT` or `GPIO.MODE_OUTPUT`."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 6,
+    "name": "MODE_INPUT",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 7,
+    "name": "MODE_OUTPUT",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 12,
+    "name": "set_pull",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": "## **`GPIO.set_pull(pin, type)`**\nSet GPIO pin pull type.\n`type` can be either `GPIO.PULL_NONE`, `GPIO.PULL_UP`, or `GPIO.PULL_DOWN`."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 13,
+    "name": "PULL_NONE",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 14,
+    "name": "PULL_UP",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 15,
+    "name": "PULL_DOWN",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 20,
+    "name": "toggle",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": "## **`GPIO.toggle(pin)`**\nToggle the level of certain GPIO pin.\nReturn value: 0 or 1, indicating the resulting pin level."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 24,
+    "name": "write",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": "## **`GPIO.write(pin, level)`**\nSet GPIO pin level to either 0 or 1. Return value: none."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 28,
+    "name": "read",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": "## **`GPIO.read(pin)`**\nRead GPIO pin level. Return value: 0 or 1."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 34,
+    "name": "enable_int",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": "## **`GPIO.enable_int(pin)`**\nEnable interrupts on GPIO pin.\nThis function must be called AFTER the interrupt handler is installed.\nReturn value: 1 in case of success, 0 otherwise."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 39,
+    "name": "disable_int",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": "## **`GPIO.disable_int(pin)`**\nDisable interrupts on GPIO pin.\nReturn value: 1 in case of success, 0 otherwise."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 54,
+    "name": "set_int_handler",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": "## **`GPIO.set_int_handler(pin, mode, handler)`**\nInstall GPIO interrupt handler. `mode` could be one of: `GPIO.INT_NONE`,\n`GPIO.INT_EDGE_POS`, `GPIO.INT_EDGE_NEG`, `GPIO.INT_EDGE_ANY`,\n`GPIO.INT_LEVEL_HI`, `GPIO.INT_LEVEL_LO`.\nReturn value: 1 in case of success, 0 otherwise.\nExample:\n```javascript\nGPIO.set_mode(pin, GPIO.MODE_INPUT);\nGPIO.set_int_handler(pin, GPIO.INT_EDGE_NEG, function(pin) {\n   print('Pin', pin, 'got interrupt');\n}, null);\nGPIO.enable_int(pin);\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 55,
+    "name": "INT_NONE",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 56,
+    "name": "INT_EDGE_POS",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 57,
+    "name": "INT_EDGE_NEG",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 58,
+    "name": "INT_EDGE_ANY",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 59,
+    "name": "INT_LEVEL_HI",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 60,
+    "name": "INT_LEVEL_LO",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_gpio.js",
+    "line": 74,
+    "name": "set_button_handler",
+    "type": "member",
+    "args": "",
+    "scope": "GPIO",
+    "doc": "## **`GPIO.set_button_handler(pin, pull, intmode, period, handler)`**\nInstall\nGPIO button handler. `pull` is pull type, `intmode` is interrupt mode,\n`period` is debounce interval in milliseconds, handler is a function that\nreceives pin number.\nReturn value: 1 in case of success, 0 otherwise.\nExample:\n```javascript\nGPIO.set_button_handler(pin, GPIO.PULL_UP, GPIO.INT_EDGE_NEG, 200, function(x) {\n  print('Button press, pin: ', x);\n}, null);\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_grove.js",
+    "line": 4,
+    "name": "Grove",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_grove.js",
+    "line": 5,
+    "name": "Button",
+    "type": "member",
+    "args": "",
+    "scope": "Grove",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_grove.js",
+    "line": 13,
+    "name": "attach",
+    "type": "function",
+    "args": "(pin, handler)",
+    "scope": "Button",
+    "doc": "## **`Grove.Button.attach(pin, handler)`**\nAttach a handler for the button on the given pin. Example:\n```javascript\nGrove.Button.attach(pin, function(pin) {\n   print('Button event at pin', pin);\n}, null);\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_http.js",
+    "line": 3,
+    "name": "URL",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_http.js",
+    "line": 12,
+    "name": "parse",
+    "type": "function",
+    "args": "(url)",
+    "scope": "URL",
+    "doc": "## **`URL.parse(url)`**\nParse URL string, return and object with `ssl`, `addr`, `uri` keys.\n\nExample:\n```javascript\nprint(JSON.stringify(URL.parse('https://a.b:1234/foo?bar')));\n// Prints: {\"uri\":\"/foo?bar\",\"addr\":\"a.b:1234\",\"ssl\":true}\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_http.js",
+    "line": 37,
+    "name": "HTTP",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_http.js",
+    "line": 38,
+    "name": "_getm",
+    "type": "member",
+    "args": "",
+    "scope": "HTTP",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_http.js",
+    "line": 39,
+    "name": "_getb",
+    "type": "member",
+    "args": "",
+    "scope": "HTTP",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_http.js",
+    "line": 40,
+    "name": "_mgp",
+    "type": "member",
+    "args": "",
+    "scope": "HTTP",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_http.js",
+    "line": 41,
+    "name": "_mgl",
+    "type": "member",
+    "args": "",
+    "scope": "HTTP",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_http.js",
+    "line": 43,
+    "name": "_c",
+    "type": "member",
+    "args": "",
+    "scope": "HTTP",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_http.js",
+    "line": 44,
+    "name": "_cs",
+    "type": "member",
+    "args": "",
+    "scope": "HTTP",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_http.js",
+    "line": 45,
+    "name": "_sp",
+    "type": "member",
+    "args": "",
+    "scope": "HTTP",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_http.js",
+    "line": 47,
+    "name": "_mstr",
+    "type": "function",
+    "args": "(hmptr, func)",
+    "scope": "HTTP",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_http.js",
+    "line": 74,
+    "name": "query",
+    "type": "function",
+    "args": "(opts)",
+    "scope": "HTTP",
+    "doc": "## **`HTTP.query(options);`**\nSend HTTP request. Options object accepts the following fields:\n`url` - mandatory URL to fetch, `success` - optional callback function\nthat receives reply body, `error` - optional error callback that receives\nerror string, `data` - optional object with request parameters.\nBy default, `GET` method is used. If `data` is specified, POST method\nis used, the `data` object gets `JSON.stringify()`-ed and used as a\nHTTP message body.\n\nIn order to send HTTPS request, use `https://...` URL. Note that in that\ncase `ca.pem` file must contain CA certificate of the requested server.\n\nExample:\n```javascript\nHTTP.query({\n  url: 'http://httpbin.org/post',\n  headers: { 'X-Foo': 'bar' },     // Optional - headers\n  data: {foo: 1, bar: 'baz'},      // Optional. If set, JSON-encoded and POST-ed\n  success: function(body, full_http_msg) { print(body); },\n  error: function(err) { print(err); },  // Optional\n});\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 1,
+    "name": "Log",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 10,
+    "name": "print",
+    "type": "function",
+    "args": "(level, msg)",
+    "scope": "Log",
+    "doc": "## **`Log.print(level, msg)`**\nPrint message to stderr if provided\nlevel is \u003e= `Cfg.get('debug.level')`. Possible levels are:\n- `Log.ERROR` (0)\n- `Log.WARN` (1)\n- `Log.INFO` (2)\n- `Log.DEBUG` (3)\n- `Log.VERBOSE_DEBUG` (4)"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 38,
+    "name": "error",
+    "type": "function",
+    "args": "(msg)",
+    "scope": "Log",
+    "doc": "## **`Log.error(msg)`**\nShortcut for `Log.print(Log.ERROR, msg)`"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 44,
+    "name": "warn",
+    "type": "function",
+    "args": "(msg)",
+    "scope": "Log",
+    "doc": "## **`Log.warn(msg)`**\nShortcut for `Log.print(Log.WARN, msg)`"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 50,
+    "name": "info",
+    "type": "function",
+    "args": "(msg)",
+    "scope": "Log",
+    "doc": "## **`Log.info(msg)`**\nShortcut for `Log.print(Log.INFO, msg)`"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 56,
+    "name": "debug",
+    "type": "function",
+    "args": "(msg)",
+    "scope": "Log",
+    "doc": "## **`Log.debug(msg)`**\nShortcut for `Log.print(Log.DEBUG, msg)`"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 62,
+    "name": "verboseDebug",
+    "type": "function",
+    "args": "(msg)",
+    "scope": "Log",
+    "doc": "## **`Log.verboseDebug(msg)`**\nShortcut for `Log.print(Log.VERBOSE_DEBUG, msg)`"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 66,
+    "name": "ERROR",
+    "type": "member",
+    "args": "",
+    "scope": "Log",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 67,
+    "name": "WARN",
+    "type": "member",
+    "args": "",
+    "scope": "Log",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 68,
+    "name": "INFO",
+    "type": "member",
+    "args": "",
+    "scope": "Log",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 69,
+    "name": "DEBUG",
+    "type": "member",
+    "args": "",
+    "scope": "Log",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 70,
+    "name": "VERBOSE_DEBUG",
+    "type": "member",
+    "args": "",
+    "scope": "Log",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 72,
+    "name": "_pr",
+    "type": "member",
+    "args": "",
+    "scope": "Log",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 73,
+    "name": "_fn",
+    "type": "member",
+    "args": "",
+    "scope": "Log",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 74,
+    "name": "_ln",
+    "type": "member",
+    "args": "",
+    "scope": "Log",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_log.js",
+    "line": 75,
+    "name": "_off",
+    "type": "member",
+    "args": "",
+    "scope": "Log",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_neopixel.js",
+    "line": 8,
+    "name": "NeoPixel",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_neopixel.js",
+    "line": 9,
+    "name": "RGB",
+    "type": "member",
+    "args": "",
+    "scope": "NeoPixel",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_neopixel.js",
+    "line": 10,
+    "name": "GRB",
+    "type": "member",
+    "args": "",
+    "scope": "NeoPixel",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_neopixel.js",
+    "line": 11,
+    "name": "BGR",
+    "type": "member",
+    "args": "",
+    "scope": "NeoPixel",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_neopixel.js",
+    "line": 25,
+    "name": "create",
+    "type": "function",
+    "args": "(pin, numPixels, order)",
+    "scope": "NeoPixel",
+    "doc": "## **`NeoPixel.create(pin, numPixels, order)`**\nCreate and return a NeoPixel strip object. Example:\n```javascript\nlet pin = 5, numPixels = 16, colorOrder = NeoPixel.GRB;\nlet strip = NeoPixel.create(pin, numPixels, colorOrder);\nstrip.setPixel(0 /* pixel */, 12, 34, 56);\nstrip.show();\n\nstrip.clear();\nstrip.setPixel(1 /* pixel */, 12, 34, 56);\nstrip.show();\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_neopixel.js",
+    "line": 46,
+    "name": "set",
+    "type": "function",
+    "args": "(i, r, g, b)",
+    "scope": "NeoPixel",
+    "doc": "## **`strip.setPixel(i, r, g, b)`**\nSet i-th's pixel's RGB value.\nNote that this only affects in-memory value of the pixel."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_neopixel.js",
+    "line": 64,
+    "name": "clear",
+    "type": "function",
+    "args": "()",
+    "scope": "NeoPixel",
+    "doc": "## **`strip.clear()`**\nClear in-memory values of the pixels."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_neopixel.js",
+    "line": 72,
+    "name": "show",
+    "type": "function",
+    "args": "()",
+    "scope": "NeoPixel",
+    "doc": "## **`strip.show()`**\nOutput values of the pixels."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 3,
+    "name": "Net",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 4,
+    "name": "_rb",
+    "type": "member",
+    "args": "",
+    "scope": "Net",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 5,
+    "name": "_mptr",
+    "type": "member",
+    "args": "",
+    "scope": "Net",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 6,
+    "name": "_glen",
+    "type": "member",
+    "args": "",
+    "scope": "Net",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 7,
+    "name": "_mrem",
+    "type": "member",
+    "args": "",
+    "scope": "Net",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 8,
+    "name": "_isin",
+    "type": "member",
+    "args": "",
+    "scope": "Net",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 10,
+    "name": "_bind",
+    "type": "member",
+    "args": "",
+    "scope": "Net",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 11,
+    "name": "_c",
+    "type": "member",
+    "args": "",
+    "scope": "Net",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 12,
+    "name": "_cs",
+    "type": "member",
+    "args": "",
+    "scope": "Net",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 13,
+    "name": "_send",
+    "type": "member",
+    "args": "",
+    "scope": "Net",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 14,
+    "name": "_ctos",
+    "type": "member",
+    "args": "",
+    "scope": "Net",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 17,
+    "name": "_rbuf",
+    "type": "function",
+    "args": "(conn)",
+    "scope": "Net",
+    "doc": "Return string contained in connection's recv_mbuf"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 29,
+    "name": "ctos",
+    "type": "function",
+    "args": "(conn, local, ip, port)",
+    "scope": "Net",
+    "doc": "**`Net.ctos(conn, local, ip, port)`**\nConvert address of a connection `conn` to string. Set `local` to\n`true` to stringify local address, otherwise `false` to stringify remote.\nSet `ip` to `true` to stringify IP, `port` to stringify port. Example:\n```javascript\nprint('Connection from:', Net.ctos(conn, false, true, true));\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 39,
+    "name": "discard",
+    "type": "function",
+    "args": "(conn, len)",
+    "scope": "Net",
+    "doc": "**`Net.discard(conn, len)`**\nRemove initial `len` bytes of data from the connection's `conn`\nreceive buffer in order to discard that data and reclaim RAM to the system."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 44,
+    "name": "_evh",
+    "type": "function",
+    "args": "(conn, ev, edata, obj)",
+    "scope": "Net",
+    "doc": "Event handler. Expects an object with connect/data/close/event user funcs."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 90,
+    "name": "serve",
+    "type": "function",
+    "args": "(obj)",
+    "scope": "Net",
+    "doc": "## **`Net.serve(options)`**\nStart TCP or UDP server. `options` is an object:\n```javascript\n{\n   // Required. Port to listen on, 'tcp://PORT' or `udp://PORT`.\n   addr: 'tcp://1234',\n   // Optional. Called when connection is established.\n   onconnect: function(conn) {},\n   // Optional. Called when new data is arrived.\n   ondata: function(conn, data) {},\n   // Optional. Called when protocol-specific event is triggered.\n   onevent: function(conn, data, ev, edata) {},\n   // Optional. Called when the connection is about to close.\n   onclose: function(conn) {},\n   // Optional. Called when on connection error.\n   onerror: function(conn) {},\n}\n```\nExample - a UDP echo server. Change `udp://` to `tcp://` to turn this\nexample into the TCP echo server:\n```javascript\nNet.serve({\n  addr: 'udp://1234',\n  ondata: function(conn, data) {\n    print('Received from:', Net.ctos(conn, false, true, true), ':', data);\n    Net.send(conn, data);            // Echo received data back\n    Net.discard(conn, data.length);  // Discard received data\n  },\n});\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 102,
+    "name": "connect",
+    "type": "function",
+    "args": "(obj)",
+    "scope": "Net",
+    "doc": "## **`Net.connect(options)`**\nConnect to a remote host. `options` is the same as for the `Net.serve`.\nThe addr format is `[PROTO://]HOST:PORT`. `PROTO` could be `tcp` or\n`udp`. `HOST` could be an IP address or a host name. If `HOST` is a name,\nit will be resolved asynchronously.\n\nExamples of valid addresses: `google.com:80`, `udp://1.2.3.4:53`,\n`10.0.0.1:443`, `[::1]:80`."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 114,
+    "name": "close",
+    "type": "member",
+    "args": "",
+    "scope": "Net",
+    "doc": "## **`Net.close(conn)`**\nSend all pending data to the remote peer,\nand disconnect when all data is sent.\nReturn value: none."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 119,
+    "name": "send",
+    "type": "function",
+    "args": "(c, msg)",
+    "scope": "Net",
+    "doc": "## **`Net.send(conn, data)`**\nSend data to the remote peer. `data` is an mJS string.\nReturn value: none."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_net.js",
+    "line": 130,
+    "name": "EVENT_GRP",
+    "type": "member",
+    "args": "",
+    "scope": "Net",
+    "doc": "## **`Net.EVENT_GRP`**\nNet events group, to be used with `Event.addGroupHandler()`. Possible\nevents are:\n- `Net.STATUS_DISCONNECTED`\n- `Net.STATUS_CONNECTING`\n- `Net.STATUS_CONNECTED`\n- `Net.STATUS_GOT_IP`"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_sys.js",
+    "line": 1,
+    "name": "Sys",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_sys.js",
+    "line": 9,
+    "name": "_sbuf",
+    "type": "function",
+    "args": "(len)",
+    "scope": "Sys",
+    "doc": "## **`Sys._sbuf(len)`**\nHelper function to allocate string of at least given length. Note that\nthe resulting string is usually bigger than this, and it is always\nlonger than 5 bytes; that's to guarantee that the string data is stored in\na common buffer and not inlined into mjs_val_t, thus the buffer can be\nused as an \"output\" buffer: a string can be passed to some function which\nwill alter the contents, and these changes will be visible to the caller."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_sys.js",
+    "line": 18,
+    "name": "malloc",
+    "type": "member",
+    "args": "",
+    "scope": "Sys",
+    "doc": "## **`Sys.calloc(nmemb, size)`**\nAllocate a memory region.\nNote: currently memory allocated this way must be explicitly released with `free()`."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_sys.js",
+    "line": 19,
+    "name": "free",
+    "type": "member",
+    "args": "",
+    "scope": "Sys",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_sys.js",
+    "line": 23,
+    "name": "total_ram",
+    "type": "member",
+    "args": "",
+    "scope": "Sys",
+    "doc": "## **`Sys.total_ram()`**\nReturn total available RAM in bytes."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_sys.js",
+    "line": 27,
+    "name": "free_ram",
+    "type": "member",
+    "args": "",
+    "scope": "Sys",
+    "doc": "## **`Sys.free_ram()`**\nReturn free available RAM in bytes."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_sys.js",
+    "line": 31,
+    "name": "reboot",
+    "type": "member",
+    "args": "",
+    "scope": "Sys",
+    "doc": "## **`Sys.reboot(us)`**\nReboot the system after `us` microseconds. Return value: none."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_sys.js",
+    "line": 35,
+    "name": "uptime",
+    "type": "member",
+    "args": "",
+    "scope": "Sys",
+    "doc": "## **`Sys.uptime()`**\nReturn number of seconds since last reboot."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_sys.js",
+    "line": 40,
+    "name": "usleep",
+    "type": "member",
+    "args": "",
+    "scope": "Sys",
+    "doc": "## **`Sys.usleep(microseconds)`**\nSleep given number of microseconds.\nReturn value: none."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_sys.js",
+    "line": 45,
+    "name": "wdt_feed",
+    "type": "member",
+    "args": "",
+    "scope": "Sys",
+    "doc": "## **`Sys.wdt_feed()`**\nFeed the watchdog timer.\nReturn value: none."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_timer.js",
+    "line": 3,
+    "name": "Timer",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_timer.js",
+    "line": 4,
+    "name": "_f",
+    "type": "member",
+    "args": "",
+    "scope": "Timer",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_timer.js",
+    "line": 22,
+    "name": "set",
+    "type": "member",
+    "args": "",
+    "scope": "Timer",
+    "doc": "## **`Timer.set(milliseconds, flags, handler, userdata)`**\nSetup timer with `milliseconds` timeout and `handler` as a callback.\n`flags` can be either 0 or `Timer.REPEAT`. In the latter case, the call\nwill be repeated indefinitely (but can be cancelled with `Timer.del()`),\notherwise it's a one-off.\n\nReturn value: numeric timer ID.\n\nExample:\n```javascript\n// Call every second\nTimer.set(1000, Timer.REPEAT, function() {\n  let value = GPIO.toggle(2);\n  print(value ? 'Tick' : 'Tock');\n}, null);\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_timer.js",
+    "line": 24,
+    "name": "REPEAT",
+    "type": "member",
+    "args": "",
+    "scope": "Timer",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_timer.js",
+    "line": 28,
+    "name": "now",
+    "type": "member",
+    "args": "",
+    "scope": "Timer",
+    "doc": "## **`Timer.now()`**\nReturn current time as double value, UNIX epoch (seconds since 1970)."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_timer.js",
+    "line": 32,
+    "name": "del",
+    "type": "member",
+    "args": "",
+    "scope": "Timer",
+    "doc": "## **`Timer.del(id)`**\nCancel previously installed timer."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_timer.js",
+    "line": 44,
+    "name": "fmt",
+    "type": "function",
+    "args": "(fmt, time)",
+    "scope": "Timer",
+    "doc": "## **`Timer.fmt(fmt, time)`**\nFormats the time 'time' according to the strftime-like format\nspecification 'fmt'. The strftime reference can be found e.g.\n[here](http://www.cplusplus.com/reference/ctime/strftime/).\nExample:\n```javascript\nlet now = Timer.now();\nlet s = Timer.fmt(\"Now it's %I:%M%p.\", now);\nprint(s); // Example output: \"Now it's 12:01AM.\"\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 3,
+    "name": "UART",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": "UART API. Source C API is defined at:\n[mgos_uart.h](https://github.com/cesanta/mongoose-os/blob/master/fw/src/mgos_uart.h)"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 4,
+    "name": "_free",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 5,
+    "name": "_cdef",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 6,
+    "name": "_cbp",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 7,
+    "name": "_crx",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 8,
+    "name": "_ctx",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 9,
+    "name": "_cfg",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 10,
+    "name": "_wr",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 11,
+    "name": "_rd",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 84,
+    "name": "setConfig",
+    "type": "function",
+    "args": "(uartNo, param)",
+    "scope": "UART",
+    "doc": "## **`UART.setConfig(uartNo, param)`**\nSet UART config. `param` is an\nobject with the following optional fields:\n\n- `baudRate`: baud rate, integer, default: 115200;\n- `numDataBits`: Number of data bits, default: 8;\n- `parity`: Parity: 0 - none, 1 - even, 2 - odd; default: none;\n- `numStopBits`: Number of stop bits: 1 - 1 bit, 2 - 2 bits, 3 - 1.5; default: 1;\n- `rxBufSize`: size of the Rx buffer, integer, default: 256;\n- `rxFlowControl`: whether Rx flow control (RTS pin) is enabled, boolean,\n   default: false;\n- `rxLingerMicros`: how many microseconds to linger after Rx fifo\n  is empty, in case more data arrives. Integer, default: 15;\n- `txBufSize`: size of the Tx buffer, integer, default: 256;\n- `txFlowControl`: whether Tx flow control (CTS pin) is enabled, boolean,\n  default: false;\n\nOther than that, there are architecture-dependent settings, grouped in\nthe objects named with the architecture name: \"esp32\", \"esp8266\", etc.\n\nSettings for esp32:\n\n```\n  esp32: {\n     /*\n      * GPIO pin numbers, default values depend on UART.\n      *\n      * UART 0: Rx: 3, Tx: 1, CTS: 19, RTS: 22\n      * UART 1: Rx: 13, Tx: 14, CTS: 15, RTS: 16\n      * UART 2: Rx: 17, Tx: 25, CTS: 26, RTS: 27\n      */\n     gpio: {\n       rx: number,\n       tx: number,\n       cts: number,\n       rts: number,\n     },\n\n     /* Hardware FIFO tweaks */\n     fifo: {\n       /*\n        * A number of bytes in the hardware Rx fifo, should be between 1 and 127.\n        * How full hardware Rx fifo should be before \"rx fifo full\" interrupt is\n        * fired.\n        */\n       rxFullThresh: number,\n\n       /*\n        * A number of bytes in the hardware Rx fifo, should be more than\n        * rx_fifo_full_thresh.\n        *\n        * How full hardware Rx fifo should be before CTS is deasserted, telling\n        * the other side to stop sending data.\n        */\n       rxFcThresh: number,\n\n       /*\n        * Time in uart bit intervals when \"rx fifo full\" interrupt fires even if\n        * it's not full enough\n        */\n       rxAlarm: number,\n\n       /*\n        * A number of bytes in the hardware Tx fifo, should be between 1 and 127.\n        * When the number of bytes in Tx buffer becomes less than\n        * tx_fifo_empty_thresh, \"tx fifo empty\" interrupt fires.\n        */\n       txEmptyThresh: number,\n     },\n   }\n```"
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 124,
+    "name": "setDispatcher",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": "## **`UART.setDispatcher(uartNo, callback, userdata)`**\nSet UART dispatcher\ncallback which gets invoked when there is a new data in the input buffer\nor when the space becomes available on the output buffer.\n\nCallback receives the following arguments: `(uartNo, userdata)`."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 130,
+    "name": "write",
+    "type": "function",
+    "args": "(uartNo, data)",
+    "scope": "UART",
+    "doc": "## **`UART.write(uartNo, data)`**\nWrite data to the buffer. Returns number of bytes written.\n\nExample usage: `UART.write(1, \"foobar\")`, in this case, 6 bytes will be written."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 136,
+    "name": "writeAvail",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": "## **`UART.writeAvail(uartNo)`**\nReturn amount of space available in the output buffer."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 141,
+    "name": "read",
+    "type": "function",
+    "args": "(uartNo)",
+    "scope": "UART",
+    "doc": "## **`UART.read(uartNo)`**\nIt never blocks, and returns a string containing\nread data (which will be empty if there's no data available)."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 150,
+    "name": "readAvail",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": "## **`UART.readAvail(uartNo)`**\nReturn amount of data available in the input buffer."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 154,
+    "name": "setRxEnabled",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": "## **`UART.setRxEnabled(uartNo)`**\nSet whether Rx is enabled."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 157,
+    "name": "isRxEnabled",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": "## **`UART.isRxEnabled(uartNo)`**\nReturns whether Rx is enabled."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/api_uart.js",
+    "line": 161,
+    "name": "flush",
+    "type": "member",
+    "args": "",
+    "scope": "UART",
+    "doc": "## **`UART.flush(uartNo)`**\nFlush the UART output buffer, wait for the data to be sent."
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/init.js",
+    "line": 5,
+    "name": "pin",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/init.js",
+    "line": 8,
+    "name": "total_ram",
+    "type": "member",
+    "args": "",
+    "scope": "msg",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/init.js",
+    "line": 8,
+    "name": "msg",
+    "type": "let",
+    "args": "",
+    "scope": "",
+    "doc": ""
+  },
+  {
+    "file": "../../mos_libs/mjs/fs/init.js",
+    "line": 9,
+    "name": "MQTT",
+    "type": "member",
+    "args": "",
+    "scope": "msg",
+    "doc": ""
+  }
+]
